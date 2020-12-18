@@ -15,15 +15,15 @@ export const isValidDate = (dateToValidate) => {
   }
 };
 
-export const isNormalInteger = (str) => {
+export const isValidNumber = (str) => {
   return /^\+?(0|[1-9]\d*)$/.test(str);
 };
 
 export const isVallidDateRange = (fromDate, toDate) => {
   if (isValidDate(fromDate) && isValidDate(toDate)) {
-    let fromParsed = parse(fromDate);
-    let toParsed = parse(toDate);
-    return isBefore(toParsed, fromParsed) || isEqual(toParsed, fromParsed);
+    let fromParsed = new Date(fromDate);
+    let toParsed = new Date(toDate);
+    return isBefore(fromParsed, toParsed) || isEqual(toParsed, fromParsed);
   }
   return false;
 };
