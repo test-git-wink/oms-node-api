@@ -40,13 +40,16 @@ class OrderService {
         ] = await updateOrderStatusDao(orderStatusConst.CANCEL, orderId);
         let orderUpdateCount = orderUpdateCountResult["affectedRows"];
         console.log(orderUpdateCount);
-
+        logger.info(
+          "%s error OrderController cancelOrder orderUpdateCount: { %j }",
+          orderUpdateCount
+        );
         return orderUpdateCount;
       } else {
         return 0;
       }
     } catch (error) {
-      logger.error("%s error OrderController cancelOrder param: { %j }", error);
+      logger.error("%s error OrderController cancelOrder %j", error);
       return 0;
     }
   }
