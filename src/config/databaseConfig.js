@@ -9,7 +9,3 @@ const mysqlPool = createPool({
 });
 
 export default mysqlPool;
-
-// export default async function connectionPool() {
-//   return mysqlPool.promise();
-// }

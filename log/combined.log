@@ -1,0 +1,112 @@
+2020-12-21T00:42:56.268Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=undefined,page=0,limit=10}
+2020-12-21T00:42:56.273Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=undefined,page=0,limit=10}
+2020-12-21T00:47:14.188Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 29 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T00:49:48.655Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 29 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:00:27.507Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 29 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:00:52.403Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:02:31.312Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:04:36.418Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:13:00.259Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:16:54.233Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:20:30.446Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:24:29.548Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:28:02.440Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:30:47.306Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:32:34.676Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:33:44.064Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:34:07.753Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:37:30.220Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:38:27.338Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"fail"}}
+2020-12-21T01:39:01.059Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"fail"}}
+2020-12-21T01:43:26.938Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:44:52.195Z [sysco_oms] error: Error: Column 'order_status' cannot be null
+    at PromisePool.query (/home/windulakularatne/sysco-test-project/oms-node/node_modules/mysql2/promise.js:340:22)
+    at updateOrderStatusDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:26:27)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:40:19)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlState: '23000',
+  sqlMessage: "Column 'order_status' cannot be null"
+} error OrderController cancelOrder param: { %j }
+2020-12-21T01:47:00.112Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:47:30.479Z [sysco_oms] error: Error: Column 'order_status' cannot be null
+    at PromisePool.query (/home/windulakularatne/sysco-test-project/oms-node/node_modules/mysql2/promise.js:340:22)
+    at updateOrderStatusDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:26:27)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:41:19)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlState: '23000',
+  sqlMessage: "Column 'order_status' cannot be null"
+} error OrderController cancelOrder param: { %j }
+2020-12-21T01:55:08.970Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:55:35.935Z [sysco_oms] error: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where `[object Object]`' at line 1
+    at PromisePool.query (/home/windulakularatne/sysco-test-project/oms-node/node_modules/mysql2/promise.js:340:22)
+    at updateOrderStatusDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:26:27)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:41:19)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlState: '42000',
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where `[object Object]`' at line 1"
+} error OrderController cancelOrder param: { %j }
+2020-12-21T01:56:45.675Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T01:57:05.705Z [sysco_oms] error: Error: Column 'order_status' cannot be null
+    at PromisePool.query (/home/windulakularatne/sysco-test-project/oms-node/node_modules/mysql2/promise.js:340:22)
+    at updateOrderStatusDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:26:27)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:41:19)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlState: '23000',
+  sqlMessage: "Column 'order_status' cannot be null"
+} error OrderController cancelOrder param: { %j }
+2020-12-21T01:58:36.889Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T02:00:24.849Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T02:00:24.888Z [sysco_oms] error: Error: Column 'order_status' cannot be null
+    at PromisePool.query (/home/windulakularatne/sysco-test-project/oms-node/node_modules/mysql2/promise.js:340:22)
+    at updateOrderStatusDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:26:27)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:41:19)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlState: '23000',
+  sqlMessage: "Column 'order_status' cannot be null"
+} error OrderController cancelOrder param: { %j }
+2020-12-21T02:02:25.835Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T02:02:25.871Z [sysco_oms] error: TypeError: Cannot read property 'toString' of undefined
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:41:59)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:34:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:36:194)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) error OrderController cancelOrder param: { %j }
+2020-12-21T02:08:08.001Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-21T02:08:43.949Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 20 , orderStatus : {"orderStatus":"cancel"}}

@@ -1,6 +1,13 @@
 import { getFromToDateRange } from "../util/dateConversion";
 import { getOffset } from "../util/commonUtil";
-import { orderDataDao } from "../dao/orderDao";
+import {
+  orderDataDao,
+  orderStatusByIdDao,
+  updateOrderStatusDao,
+} from "../dao/orderDao";
+import logger from "../util/logger";
+import { isValidOrderRequest } from "../validation/orderValidation";
+import { orderStatusConst, CANCEL_ORDER } from "../constants/orderStatus";
 
 class OrderService {
   async getOrders(fromDate, toDate, page, pageLimit) {
@@ -8,12 +15,40 @@ class OrderService {
     let offset = getOffset(page);
     let limit = parseInt(pageLimit);
 
-    return await orderDataDao(
+    let [result, colDef] = await orderDataDao(
       dates["fromDate"],
       dates["toDate"],
       limit,
       offset
     );
+    return result;
+  }
+
+  async cancelOrder(orderId, orderStatusRequest) {
+    try {
+      let [orderStatusResult, columnDef] = await orderStatusByIdDao(orderId);
+      let orderStatus = orderStatusResult[0]["order_status"];
+      if (
+        isValidOrderRequest(orderStatusRequest) &&
+        orderStatus != undefined &&
+        orderStatus != orderStatusConst.FAIL &&
+        orderStatus != orderStatusConst.CANCEL
+      ) {
+        let [
+          orderUpdateCountResult,
+          orderUpdateCountColumnDef,
+        ] = await updateOrderStatusDao(orderStatusConst.CANCEL, orderId);
+        let orderUpdateCount = orderUpdateCountResult["affectedRows"];
+        console.log(orderUpdateCount);
+
+        return orderUpdateCount;
+      } else {
+        return 0;
+      }
+    } catch (error) {
+      logger.error("%s error OrderController cancelOrder param: { %j }", error);
+      return 0;
+    }
   }
 }
 

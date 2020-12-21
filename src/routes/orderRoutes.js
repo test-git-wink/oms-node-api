@@ -1,53 +1,98 @@
 import { Router } from "express";
-import {
-  isVallidDateRange,
-  isValidNumber,
-} from "../validation/commonValidation";
-
 import OrderService from "../service/orderService";
-import { getFromToDateRange } from "../util/dateConversion";
-import { getOffset } from "../util/commonUtil";
-import { orderDataDao } from "../dao/orderDao";
-
-const orderRoutes = Router();
+import logger from "../util/logger";
+import {
+  isValidNumber,
+  isVallidDateRange,
+} from "../validation/commonValidation";
+import { isValidOrderId } from "../validation/orderValidation";
+import { responseMsgs } from "../constants/responseMsgsConst";
 
 class OrderController {
-  constructor() {
-    this.orderService = new OrderService();
-  }
-
   async getOrderRoute(req, res, next) {
     try {
       const { fromDate, toDate, page, limit } = req.query;
+      logger.info(
+        "OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}",
+        fromDate,
+        toDate,
+        page,
+        limit
+      );
       if (
         isVallidDateRange(fromDate, toDate) &&
         isValidNumber(page) &&
         isValidNumber(limit)
       ) {
-        let dates = getFromToDateRange(fromDate, toDate);
-        let offset = getOffset(page);
-        let pageLimit = parseInt(limit);
-
-        let [result, colDef] = await orderDataDao(
-          dates.fromDate,
-          dates.toDate,
-          pageLimit,
-          offset
+        let result = await orderService.getOrders(
+          fromDate,
+          toDate,
+          page,
+          limit
         );
-        console.log(result);
-        return res
-          .status(200)
-          .json({ message: "Connected!", orderItems: result });
+        return res.status(200).json({ orders: result });
+      } else {
+        logger.error(
+          `%s OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}`,
+          responseMsgs.INVALID_INPUTS,
+          fromDate,
+          toDate,
+          page,
+          limit
+        );
+        return res.status(400).json({ message: responseMsgs.INVALID_INPUTS });
       }
     } catch (error) {
+      logger.error(
+        "%s OrderController getOrderRoute %j",
+        responseMsgs.INVALID_INPUTS,
+        error
+      );
       console.log(error);
-      return res.status(400).json({ message: "Invalid!" });
+      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
+    }
+  }
+
+  async updateOrderRoute(req, res, next) {
+    try {
+      const orderId = req.params.orderId;
+
+      logger.info(
+        "OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %j}",
+        orderId,
+        req.body
+      );
+
+      if (isValidNumber(orderId) && isValidOrderId(orderId)) {
+        orderService.cancelOrder(orderId, req.body);
+        return res.status(204).json({ message: responseMsgs.SUCCESS });
+      } else {
+        logger.error(
+          "%s OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %j}",
+          responseMsgs.INVALID_INPUTS,
+          orderId,
+          req.body
+        );
+        return res.status(400).json({ message: responseMsgs.INVALID_INPUTS });
+      }
+    } catch (error) {
+      logger.error(
+        "%s error OrderController updateOrderRoute param: { %j }",
+        responseMsgs.SERVER_ERROR,
+        error
+      );
+      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 }
 
+const orderRoutes = Router();
+
+const orderService = new OrderService();
+
 const orderController = new OrderController();
 
 orderRoutes.get("/", orderController.getOrderRoute);
+orderRoutes.patch("/:orderId", orderController.updateOrderRoute);
 
 export default orderRoutes;

@@ -1,0 +1,58 @@
+2020-12-20T09:50:37.215Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T13:02:03.097Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %}
+2020-12-20T13:04:19.051Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %}
+2020-12-20T13:07:01.154Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %}
+2020-12-20T14:39:37.791Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:43:46.567Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:43:46.571Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:44:51.465Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:45:14.824Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:45:42.649Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:45:54.613Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:47:16.114Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:47:16.118Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:49:15.765Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:49:15.770Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:52:56.566Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:52:56.570Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:53:53.267Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:53:53.273Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:56:45.399Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:56:45.403Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T14:58:36.146Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T14:58:36.152Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T15:48:44.284Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:48:44.293Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T15:49:45.064Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:51:49.855Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:51:49.862Z [sysco_oms] info: OrderController getOrderRoute params {fromDate: %s , toDate: %s , page: %s ,pageLimit: %s}
+2020-12-20T15:53:48.965Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:53:48.970Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T15:55:13.941Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:55:13.948Z [sysco_oms] info: OrderController getOrderRoute params {fromDate: %s , toDate: %s , page: %s ,pageLimit: %s}
+2020-12-20T15:55:18.237Z [sysco_oms] info: OrderController getOrderRoute param: { [object Object]}
+2020-12-20T15:55:18.238Z [sysco_oms] error:  error OrderController getOrderRoute param: %s %s
+2020-12-20T16:34:36.540Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-20T16:34:36.545Z [sysco_oms] error:  error OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-20T17:19:30.786Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:03:28.373Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:04:38.388Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:04:38.393Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:10:00.659Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:10:00.660Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:10:44.607Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:10:44.611Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:23:12.277Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:23:12.278Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:23:46.106Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:23:46.107Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:25:40.446Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:25:40.446Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:37:38.810Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:37:38.810Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:38:14.172Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:38:14.173Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:39:30.316Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:39:30.317Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:41:02.730Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
+2020-12-21T00:41:02.731Z [sysco_oms] error: OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}
