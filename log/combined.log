@@ -110,3 +110,169 @@
     at processTicksAndRejections (node:internal/process/task_queues:93:5) error OrderController cancelOrder param: { %j }
 2020-12-21T02:08:08.001Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"cancel"}}
 2020-12-21T02:08:43.949Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 20 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-22T05:09:07.159Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:12:06.266Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:14:01.002Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:16:40.799Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:21:12.148Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:22:08.095Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=undefined,page=0,limit=10}
+2020-12-22T05:22:08.100Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=undefined,page=0,limit=10}
+2020-12-22T05:22:19.490Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:24:16.280Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:26:54.786Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:27:54.473Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:32:50.706Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T05:42:15.822Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 26 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-22T05:42:15.828Z [sysco_oms] error: isValidOrder() {}
+2020-12-22T05:42:15.836Z [sysco_oms] error: TypeError: Invalid attempt to destructure non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.
+    at _nonIterableRest (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:17:37)
+    at _slicedToArray (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:15:138)
+    at orderStatusByIdDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:51:45)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:29:31)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:22:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:194)
+    at /home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:364 error OrderController cancelOrder %j
+2020-12-22T05:48:14.186Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 26 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-22T05:48:14.197Z [sysco_oms] error: isValidOrder() {}
+2020-12-22T05:48:14.214Z [sysco_oms] error: TypeError: Invalid attempt to destructure non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.
+    at _nonIterableRest (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:17:37)
+    at _slicedToArray (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:15:138)
+    at orderStatusByIdDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:51:45)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:29:31)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:22:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:194)
+    at /home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:364 error OrderController cancelOrder %j
+2020-12-22T05:49:45.536Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 26 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-22T05:49:45.542Z [sysco_oms] error: isValidOrder() {}
+2020-12-22T05:49:45.549Z [sysco_oms] error: TypeError: Invalid attempt to destructure non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.
+    at _nonIterableRest (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:17:37)
+    at _slicedToArray (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:15:138)
+    at orderStatusByIdDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:51:45)
+    at _callee2$ (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:29:31)
+    at tryCatch (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:22:103)
+    at _next (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:194)
+    at /home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:24:364 error OrderController cancelOrder %j
+2020-12-22T05:53:15.848Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 26 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-22T05:53:15.879Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %j }
+2020-12-22T06:02:16.056Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 23 , orderStatus : {"orderStatus":"3dedwed"}}
+2020-12-22T09:39:10.341Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-01,toDate=2020-12-31,page=0,limit=10}
+2020-12-22T11:18:02.588Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T11:21:15.087Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T11:23:15.528Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T11:26:59.583Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T11:57:04.717Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:36:03.981Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:40:33.430Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:41:52.089Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:49:49.327Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:53:41.771Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T12:55:05.619Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T15:57:13.792Z [sysco_oms] info: false
+2020-12-22T15:57:13.801Z [sysco_oms] info: false
+2020-12-22T15:57:31.429Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T15:57:49.511Z [sysco_oms] error: getValidOrderItemList() {}
+2020-12-22T15:59:46.393Z [sysco_oms] info: false
+2020-12-22T15:59:46.476Z [sysco_oms] info: false
+2020-12-22T15:59:49.053Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:01:23.822Z [sysco_oms] error: getValidOrderItemList() {}
+2020-12-22T16:03:07.266Z [sysco_oms] info: false
+2020-12-22T16:03:07.272Z [sysco_oms] info: false
+2020-12-22T16:03:10.448Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:03:10.452Z [sysco_oms] error: getValidOrderItemList() {}
+2020-12-22T16:05:09.653Z [sysco_oms] info: false
+2020-12-22T16:05:09.659Z [sysco_oms] info: false
+2020-12-22T16:05:12.751Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:05:12.756Z [sysco_oms] error: getValidOrderItemList() {}
+2020-12-22T16:06:16.568Z [sysco_oms] info: false
+2020-12-22T16:06:16.572Z [sysco_oms] info: false
+2020-12-22T16:06:21.403Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:06:21.409Z [sysco_oms] error: getValidOrderItemList() {}
+2020-12-22T16:06:59.796Z [sysco_oms] info: false
+2020-12-22T16:06:59.806Z [sysco_oms] info: false
+2020-12-22T16:07:02.085Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:07:38.712Z [sysco_oms] error: getValidOrderItemList() ReferenceError: item is not defined
+    at findProductByIdDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/productDao.js:4:37)
+    at getValidOrderItemList (/home/windulakularatne/sysco-test-project/oms-node/src/validation/orderValidation.js:44:24)
+    at isValidPostOrderRequest (/home/windulakularatne/sysco-test-project/oms-node/src/validation/orderValidation.js:78:11)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2020-12-22T16:09:48.229Z [sysco_oms] info: false
+2020-12-22T16:09:48.237Z [sysco_oms] info: false
+2020-12-22T16:09:59.563Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:21:35.735Z [sysco_oms] info: false
+2020-12-22T16:21:35.744Z [sysco_oms] info: false
+2020-12-22T16:21:39.237Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:23:01.490Z [sysco_oms] error: getValidOrderItemList() ReferenceError: product is not defined
+    at getValidOrderItemList (/home/windulakularatne/sysco-test-project/oms-node/src/validation/orderValidation.js:49:20)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at isValidPostOrderRequest (/home/windulakularatne/sysco-test-project/oms-node/src/validation/orderValidation.js:78:5)
+2020-12-22T16:24:53.185Z [sysco_oms] info: false
+2020-12-22T16:24:53.194Z [sysco_oms] info: false
+2020-12-22T16:24:56.211Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:35:30.196Z [sysco_oms] info: false
+2020-12-22T16:35:30.205Z [sysco_oms] info: false
+2020-12-22T16:35:37.028Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:36:52.568Z [sysco_oms] info: false
+2020-12-22T16:36:52.579Z [sysco_oms] info: false
+2020-12-22T16:36:56.690Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:39:19.785Z [sysco_oms] info: false
+2020-12-22T16:39:19.794Z [sysco_oms] info: false
+2020-12-22T16:39:23.193Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:39:56.098Z [sysco_oms] error: invalid user address {"message":"connect ETIMEDOUT","code":"ETIMEDOUT"}
+2020-12-22T16:41:42.661Z [sysco_oms] info: false
+2020-12-22T16:41:42.670Z [sysco_oms] info: false
+2020-12-22T16:41:46.119Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:42:11.188Z [sysco_oms] error: invalid user address {"message":"connect ETIMEDOUT","code":"ETIMEDOUT"}
+2020-12-22T16:49:51.359Z [sysco_oms] info: false
+2020-12-22T16:49:51.418Z [sysco_oms] info: false
+2020-12-22T16:49:54.793Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T16:50:06.762Z [sysco_oms] error: invalid user address {"message":"connect ETIMEDOUT","code":"ETIMEDOUT"}
+2020-12-22T17:56:05.147Z [sysco_oms] info: false
+2020-12-22T17:56:05.160Z [sysco_oms] info: false
+2020-12-22T17:56:05.171Z [sysco_oms] info: false
+2020-12-22T17:56:05.183Z [sysco_oms] info: false
+2020-12-22T17:56:14.406Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T17:57:20.186Z [sysco_oms] info: false
+2020-12-22T17:57:20.204Z [sysco_oms] info: false
+2020-12-22T17:57:20.213Z [sysco_oms] info: false
+2020-12-22T17:57:20.222Z [sysco_oms] info: false
+2020-12-22T17:57:23.343Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T17:57:51.899Z [sysco_oms] error: invalid user address {"message":"Connection lost: The server closed the connection.","code":"PROTOCOL_CONNECTION_LOST"}
+2020-12-22T17:58:54.728Z [sysco_oms] info: false
+2020-12-22T17:58:54.784Z [sysco_oms] info: false
+2020-12-22T17:58:54.805Z [sysco_oms] info: false
+2020-12-22T17:58:54.816Z [sysco_oms] info: false
+2020-12-22T17:58:57.856Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T17:59:14.984Z [sysco_oms] error: invalid user address {"message":"Connection lost: The server closed the connection.","code":"PROTOCOL_CONNECTION_LOST"}
+2020-12-22T17:59:56.941Z [sysco_oms] info: false
+2020-12-22T17:59:56.952Z [sysco_oms] info: false
+2020-12-22T17:59:57.009Z [sysco_oms] info: false
+2020-12-22T17:59:57.018Z [sysco_oms] info: false
+2020-12-22T18:00:00.460Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T18:01:01.566Z [sysco_oms] info: false
+2020-12-22T18:01:01.583Z [sysco_oms] info: false
+2020-12-22T18:01:01.614Z [sysco_oms] info: false
+2020-12-22T18:01:01.623Z [sysco_oms] info: false
+2020-12-22T18:01:05.057Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T18:02:52.990Z [sysco_oms] info: false
+2020-12-22T18:02:53.005Z [sysco_oms] info: false
+2020-12-22T18:02:53.014Z [sysco_oms] info: false
+2020-12-22T18:02:53.026Z [sysco_oms] info: false
+2020-12-22T18:02:55.097Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T18:34:40.777Z [sysco_oms] info: false
+2020-12-22T18:34:40.783Z [sysco_oms] info: false
+2020-12-22T18:34:40.831Z [sysco_oms] info: false
+2020-12-22T18:34:40.834Z [sysco_oms] info: false
+2020-12-22T18:34:51.638Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}
+2020-12-22T18:36:43.982Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {"userId":1,"orderItemList":[{"productId":"PROD_11223","quantity":3},{"productId":"PROD_11224","quantity":3}],"orderStatus":"placed","shipmentDate":"2020-12-31","userAddresID":1}}

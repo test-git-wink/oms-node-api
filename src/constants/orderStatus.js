@@ -1,4 +1,4 @@
-export const orderStatusConst = {
+export const OrderStatusConst = {
   PLACED: "placed",
   APPROVED: "approved",
   PROCESSING: "processing",

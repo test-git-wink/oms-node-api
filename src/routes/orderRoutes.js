@@ -1,11 +1,14 @@
 import { Router } from "express";
 import OrderService from "../service/orderService";
-import logger from "../util/logger";
+import logger from "../config/logger";
 import {
   isValidNumber,
   isVallidDateRange,
 } from "../validation/commonValidation";
-import { isValidOrderId } from "../validation/orderValidation";
+import {
+  isValidOrderId,
+  isValidPostOrderRequest,
+} from "../validation/orderValidation";
 import { responseMsgs } from "../constants/responseMsgsConst";
 
 class OrderController {
@@ -63,7 +66,11 @@ class OrderController {
         req.body
       );
 
-      if (isValidNumber(orderId) && isValidOrderId(orderId)) {
+      if (
+        orderId != undefined &&
+        isValidNumber(orderId) &&
+        isValidOrderId(orderId)
+      ) {
         orderService.cancelOrder(orderId, req.body);
         return res.status(204).json({ message: responseMsgs.SUCCESS });
       } else {
@@ -84,6 +91,18 @@ class OrderController {
       return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
+
+  async createOrder(req, res, next) {
+    logger.info(
+      "OrderController createOrder() param: {  orderRequest : %j}",
+      req.body
+    );
+
+    if (isValidPostOrderRequest(req.body)) {
+      orderService.placeOrder(req.body);
+    } else {
+    }
+  }
 }
 
 const orderRoutes = Router();
@@ -94,5 +113,6 @@ const orderController = new OrderController();
 
 orderRoutes.get("/", orderController.getOrderRoute);
 orderRoutes.patch("/:orderId", orderController.updateOrderRoute);
+orderRoutes.post("/", orderController.createOrder);
 
 export default orderRoutes;

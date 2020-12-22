@@ -1,18 +1,13 @@
 import { isBefore, isEqual } from "date-fns";
-import parse from "date-fns/parse";
 import moment from "moment";
 
 const INVALID_DATE = "Invalid date";
 const DATE_FORMAT = "YYYY-MM-DD";
 
 export const isValidDate = (dateToValidate) => {
-  try {
-    if (moment(dateToValidate, DATE_FORMAT, true).format() === INVALID_DATE)
-      return false;
-    else return true;
-  } catch (error) {
+  if (moment(dateToValidate, DATE_FORMAT, true).format() === INVALID_DATE)
     return false;
-  }
+  else return true;
 };
 
 export const isValidNumber = (str) => {
