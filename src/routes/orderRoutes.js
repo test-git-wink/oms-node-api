@@ -10,6 +10,7 @@ import {
   isValidPostOrderRequest,
 } from "../validation/orderValidation";
 import { responseMsgs } from "../constants/responseMsgsConst";
+import { OrderStatusConst } from "../constants/orderStatus";
 
 class OrderController {
   async getOrderRoute(req, res, next) {
@@ -47,11 +48,10 @@ class OrderController {
       }
     } catch (error) {
       logger.error(
-        "%s OrderController getOrderRoute %j",
+        "%s OrderController getOrderRoute %s",
         responseMsgs.INVALID_INPUTS,
         error
       );
-      console.log(error);
       return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
@@ -84,7 +84,7 @@ class OrderController {
       }
     } catch (error) {
       logger.error(
-        "%s error OrderController updateOrderRoute param: { %j }",
+        "%s error OrderController updateOrderRoute param: { %s }",
         responseMsgs.SERVER_ERROR,
         error
       );
@@ -93,14 +93,32 @@ class OrderController {
   }
 
   async createOrder(req, res, next) {
-    logger.info(
-      "OrderController createOrder() param: {  orderRequest : %j}",
-      req.body
-    );
+    try {
+      logger.info(
+        "OrderController createOrder() param: {  orderRequest : %s}",
+        req.body
+      );
 
-    if (isValidPostOrderRequest(req.body)) {
-      orderService.placeOrder(req.body);
-    } else {
+      if (isValidPostOrderRequest(req.body)) {
+        const orderId = await orderService.placeOrder(req.body);
+        return res.status(201).json({
+          orderId: orderId,
+          orderStatus: OrderStatusConst.PLACED,
+          message: responseMsgs.SUCCESS,
+        });
+      } else {
+        return res.status(400).json({
+          orderStatus: OrderStatusConst.FAIL,
+          message: responseMsgs.INVALID_INPUTS,
+        });
+      }
+    } catch (error) {
+      logger.error(
+        "%s error OrderController updateOrderRoute param: { %s }",
+        responseMsgs.SERVER_ERROR,
+        error
+      );
+      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 }

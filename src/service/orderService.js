@@ -106,10 +106,13 @@ class OrderService {
       orderItem.orderId = orderId;
     }
 
-    bulkInsertOrderItemDao(orderItemsPersist);
+    await bulkInsertOrderItemDao(orderItemsPersist);
 
     for (const orderitem of getOrderingProducts) {
-      updateProductQuantityByIdDao(orderitem.productId, orderitem.quantity);
+      await updateProductQuantityByIdDao(
+        orderitem.productId,
+        orderitem.quantity
+      );
     }
 
     return orderId;

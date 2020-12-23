@@ -16,7 +16,7 @@ const logger = createLogger({
     logFormat
   ),
   transports: [
-    new winston.transports.Console({ level: "error" }),
+    new winston.transports.Console({ level: "error", colorize: true }),
     new winston.transports.File({
       filename:
         "/home/windulakularatne/sysco-test-project/oms-node/log/combined.log",
