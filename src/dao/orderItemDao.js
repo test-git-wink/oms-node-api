@@ -1,5 +1,9 @@
 import OrderItem from "../model/orderItem";
 
 export async function bulkInsertOrderItemDao(orderItems) {
-  let data = await OrderItem.beforeBulkCreate(orderItems, { validate: true });
+  try {
+    let data = await OrderItem.bulkCreate(orderItems, { validate: true });
+  } catch (error) {
+    throw error;
+  }
 }

@@ -21,6 +21,7 @@ import {
   getDeliveryDate,
   getInvoiceId,
   getOrderTimeStamp,
+  getDeliveryAddres,
 } from "../util/orderUtil";
 import { bulkInsertOrderItemDao } from "../dao/orderItemDao";
 
@@ -36,7 +37,29 @@ class OrderService {
       limit,
       offset
     );
-    return result;
+
+    let orders = [];
+
+    result.forEach((order) => {
+      orders.push({
+        orderId: order.order_id,
+        customerId: order.user_id,
+        orderTotalPrice: order.order_total_price,
+        orderTimestamp: order.order_timestamp,
+        orderStatus: order.order_status,
+        deliveryDate: order.delivery_date,
+        deliveryStatus: order.delivery_status,
+        deliveryAddress: getDeliveryAddres(
+          order.street_number,
+          order.street,
+          order.city,
+          order.state,
+          order.country
+        ),
+      });
+    });
+
+    return orders;
   }
 
   async cancelOrder(orderId, orderStatusRequest) {

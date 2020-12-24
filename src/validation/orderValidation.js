@@ -1,17 +1,13 @@
 import logger from "../config/logger";
 import { OrderRequestStatus, OrderStatusConst } from "../constants/orderStatus";
-import { countByOrderIdDao, countByUserAddressIdDao } from "../dao/orderDao";
+import { countByOrderIdDao } from "../dao/orderDao";
+import { countByUserAddressIdDao } from "../dao/userAddressDao";
 import { findProductByIdDao } from "../dao/productDao";
-import { isEmpty } from "../validation/commonValidation";
+import { isEmpty, isValidNumber } from "../validation/commonValidation";
 
 export async function isValidOrderId(orderId) {
-  try {
-    let count = await countByOrderIdDao(orderId);
-    return count > 0;
-  } catch (error) {
-    logger.error("isValidOrder() %j", error);
-    return false;
-  }
+  let count = await countByOrderIdDao(orderId);
+  return count > 0;
 }
 
 export function isValidOrderRequest(orderRequest) {
@@ -39,32 +35,22 @@ export function isValidNewOrderStatus(orderStatus) {
 export async function getValidOrderItemList(itemList) {
   let orderingProducts = [];
 
-  try {
-    for (const item of itemList) {
-      let product = await findProductByIdDao(item.productId);
-      if (product == null) {
-        continue;
-      }
-      if (!isEmpty(product) && product.inStockQuantiy > item.quantity) {
-        orderingProducts.push(item);
-      }
+  for (const item of itemList) {
+    let product = await findProductByIdDao(item.productId);
+    if (product == null || isEmpty(product)) {
+      continue;
     }
-
-    return orderingProducts;
-  } catch (error) {
-    logger.error("getValidOrderItemList() %s", error);
-    return orderingProducts;
+    if (product.inStockQuantiy > item.quantity) {
+      orderingProducts.push(item);
+    }
   }
+
+  return orderingProducts;
 }
 
 export async function isValidUserAddress(userAddress, userId) {
-  try {
-    let count = await countByUserAddressIdDao(userAddress, userId);
-    return count > 0;
-  } catch (error) {
-    logger.error("invalid user address %j", error);
-    return false;
-  }
+  let count = await countByUserAddressIdDao(userAddress, userId);
+  return count > 0;
 }
 
 export async function isValidPostOrderRequest(orderRequest) {

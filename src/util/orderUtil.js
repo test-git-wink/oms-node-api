@@ -13,3 +13,20 @@ export const getInvoiceId = () => {
 export const getOrderTimeStamp = () => {
   return format(new Date(), "yyyy-MM-dd HH:mm:ss");
 };
+
+export const getDeliveryAddres = (
+  streetNumber,
+  street,
+  city,
+  state,
+  country
+) => {
+  let address = "";
+  if (streetNumber != "") address += streetNumber;
+  if (street != "") address += " , " + street;
+  if (city != "") address += " , " + city;
+  if (state != "") address += " , " + state;
+  if (country != "") address += " , " + country;
+
+  return address;
+};

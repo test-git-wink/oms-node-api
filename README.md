@@ -12,3 +12,9 @@ node 15
 ```
 npm start
 ```
+
+### Test
+
+```
+npm test --detectOpenHandles
+```

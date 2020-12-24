@@ -1,56 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608618080679" clover="3.2.0">
-  <project timestamp="1608618080679" name="All files">
-    <metrics statements="52" coveredstatements="25" conditionals="12" coveredconditionals="4" methods="11" coveredmethods="3" elements="75" coveredelements="32" complexity="0" loc="52" ncloc="52" packages="4" files="6" classes="6"/>
-    <package name="config">
-      <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="databaseConfig.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/config/databaseConfig.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-      <file name="logger.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/config/logger.js">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="constants">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="orderStatus.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/constants/orderStatus.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="dao">
-      <metrics statements="19" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-      <file name="orderDao.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js">
-        <metrics statements="19" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+<coverage generated="1608817557903" clover="3.2.0">
+  <project timestamp="1608817557903" name="All files">
+    <metrics statements="132" coveredstatements="32" conditionals="53" coveredconditionals="15" methods="25" coveredmethods="7" elements="210" coveredelements="54" complexity="0" loc="132" ncloc="132" packages="4" files="7" classes="7"/>
+    <package name="routes">
+      <metrics statements="34" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="orderRoutes.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js">
+        <metrics statements="34" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="86" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="102" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="116" count="0" type="stmt"/>
+        <line num="121" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="130" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="133" count="0" type="stmt"/>
+        <line num="134" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="service">
+      <metrics statements="33" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="orderService.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js">
+        <metrics statements="33" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="85" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="95" count="0" type="stmt"/>
+        <line num="97" count="0" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="113" count="0" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="129" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="134" count="0" type="stmt"/>
+        <line num="135" count="0" type="stmt"/>
+        <line num="141" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="util">
+      <metrics statements="24" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <file name="commonUtil.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/util/commonUtil.js">
+        <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="dateConversion.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/util/dateConversion.js">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="orderUtil.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/util/orderUtil.js">
+        <metrics statements="15" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="31" count="0" type="stmt"/>
       </file>
     </package>
     <package name="validation">
-      <metrics statements="26" coveredstatements="15" conditionals="12" coveredconditionals="4" methods="6" coveredmethods="3"/>
+      <metrics statements="41" coveredstatements="32" conditionals="23" coveredconditionals="15" methods="10" coveredmethods="7"/>
       <file name="commonValidation.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/validation/commonValidation.js">
         <metrics statements="15" coveredstatements="6" conditionals="8" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
@@ -67,21 +135,36 @@
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="23" count="0" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
+        <line num="27" count="16" type="stmt"/>
       </file>
       <file name="orderValidation.js" path="/home/windulakularatne/sysco-test-project/oms-node/src/validation/orderValidation.js">
-        <metrics statements="11" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="17" count="6" type="cond" truecount="2" falsecount="0"/>
-        <line num="18" count="5" type="stmt"/>
-        <line num="19" count="9" type="cond" truecount="2" falsecount="0"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
+        <metrics statements="26" coveredstatements="26" conditionals="15" coveredconditionals="15" methods="6" coveredmethods="6"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="28" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="8" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
+        <line num="39" count="13" type="stmt"/>
+        <line num="40" count="13" type="cond" truecount="4" falsecount="0"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="43" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="8" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="52" count="6" type="stmt"/>
+        <line num="53" count="6" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="62" count="3" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
+        <line num="70" count="3" type="cond" truecount="3" falsecount="0"/>
       </file>
     </package>
   </project>

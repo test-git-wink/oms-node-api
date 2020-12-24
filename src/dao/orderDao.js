@@ -12,7 +12,7 @@ const ORDER_STATUS_BY_ID = `SELECT order_status from orders WHERE order_id = ?`;
 
 const PRODUCT_DETAILS_BY_ID = `SELECT product_id,in_stock_quantity,sell_price from product WHERE product_id = ?`;
 
-const COUNT_BY_USER_ADDRESS_ID = `SELECT count(*) FROM user_address WHERE user_address_id = ? AND user_id = ?`;
+export const COUNT_BY_USER_ADDRESS_ID = `SELECT count(*) FROM user_address WHERE user_address_id = ? AND user_id = ?`;
 
 const INSERT_ORDER1 = `INSERT INTO orders(order_total_price,order_timestamp,order_status,user_id,delivery_id,invoice_id)VALUES(?,?,?,?,?,?)`;
 
@@ -72,58 +72,6 @@ export async function orderStatusByIdDao(orderId) {
   let orderStatus = orderStatusResult[0]["order_status"];
 
   return orderStatus;
-}
-
-export async function productByIdDao(productId) {
-  let mysqlPoolPromise = mysqlPool.promise();
-
-  let [rows, colDef] = await mysqlPoolPromise.query(PRODUCT_DETAILS_BY_ID, [
-    productId,
-  ]);
-
-  let productDetails = rows;
-
-  return productDetails;
-}
-
-export async function countByUserAddressIdDao(userAddressId, userId) {
-  let mysqlPoolPromise = mysqlPool.promise();
-
-  let [result, colDef] = await mysqlPoolPromise.query(
-    COUNT_BY_USER_ADDRESS_ID,
-    [userAddressId, userId]
-  );
-  let count = result[0]["count(*)"];
-
-  return count;
-}
-
-export async function insertOrderDao(
-  ordertTotalPrice,
-  orderTimestamp,
-  orderStatus,
-  userId,
-  deliveryId,
-  invoiceId
-) {
-  let mysqlPoolPromise = mysqlPool.promise();
-
-  await mysqlPoolPromise.query(
-    INSERT_ORDER2,
-    [
-      { order_total_price: ordertTotalPrice },
-      { order_timestamp: orderTimestamp },
-      { order_status: orderStatus },
-      { user_id: userId },
-      { delivery_id: deliveryId },
-      { invoice_id: invoiceId },
-    ],
-    function (error, results, fields) {
-      if (error) throw error;
-      console.log(results.insertId);
-      return results.insertId;
-    }
-  );
 }
 
 export async function insertOrderDao2(
