@@ -32,11 +32,11 @@ export function isValidNewOrderStatus(orderStatus) {
   return false;
 }
 
-export async function getValidOrderItemList(itemList) {
+export async function getValidOrderItemList(itemList, transaction) {
   let orderingProducts = [];
 
   for (const item of itemList) {
-    let product = await findProductByIdDao(item.productId);
+    let product = await findProductByIdDao(item.productId, transaction);
     if (product == null || isEmpty(product)) {
       continue;
     }

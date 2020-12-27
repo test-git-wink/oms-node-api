@@ -716,3 +716,930 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 2020-12-24T13:45:50.470Z [sysco_oms] info: false
 2020-12-24T13:45:50.476Z [sysco_oms] info: false
 2020-12-24T13:45:50.479Z [sysco_oms] info: false
+2020-12-24T19:09:49.155Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-31,toDate=2020-12-31,page=0,limit=10}
+2020-12-25T07:20:42.272Z [sysco_oms] info: false
+2020-12-25T07:20:42.306Z [sysco_oms] info: false
+2020-12-25T07:20:42.309Z [sysco_oms] info: false
+2020-12-25T07:20:42.313Z [sysco_oms] info: false
+2020-12-25T07:30:01.577Z [sysco_oms] info: false
+2020-12-25T07:30:01.642Z [sysco_oms] info: false
+2020-12-25T07:30:01.646Z [sysco_oms] info: false
+2020-12-25T07:30:01.650Z [sysco_oms] info: false
+2020-12-25T07:30:12.523Z [sysco_oms] info: false
+2020-12-25T07:30:12.617Z [sysco_oms] info: false
+2020-12-25T07:30:12.623Z [sysco_oms] info: false
+2020-12-25T07:30:12.627Z [sysco_oms] info: false
+2020-12-25T07:34:45.059Z [sysco_oms] info: false
+2020-12-25T07:34:45.117Z [sysco_oms] info: false
+2020-12-25T07:34:45.121Z [sysco_oms] info: false
+2020-12-25T07:34:45.124Z [sysco_oms] info: false
+2020-12-25T07:34:50.761Z [sysco_oms] info: false
+2020-12-25T07:34:50.812Z [sysco_oms] info: false
+2020-12-25T07:34:50.816Z [sysco_oms] info: false
+2020-12-25T07:34:50.820Z [sysco_oms] info: false
+2020-12-25T07:36:20.274Z [sysco_oms] info: false
+2020-12-25T07:36:20.283Z [sysco_oms] info: false
+2020-12-25T07:36:20.338Z [sysco_oms] info: false
+2020-12-25T07:36:20.342Z [sysco_oms] info: false
+2020-12-25T07:36:39.247Z [sysco_oms] info: false
+2020-12-25T07:36:39.255Z [sysco_oms] info: false
+2020-12-25T07:36:39.269Z [sysco_oms] info: false
+2020-12-25T07:36:39.274Z [sysco_oms] info: false
+2020-12-25T07:37:13.951Z [sysco_oms] info: false
+2020-12-25T07:37:13.958Z [sysco_oms] info: false
+2020-12-25T07:37:13.962Z [sysco_oms] info: false
+2020-12-25T07:37:13.966Z [sysco_oms] info: false
+2020-12-25T07:38:12.150Z [sysco_oms] info: false
+2020-12-25T07:38:12.160Z [sysco_oms] info: false
+2020-12-25T07:38:12.165Z [sysco_oms] info: false
+2020-12-25T07:38:12.216Z [sysco_oms] info: false
+2020-12-25T07:38:28.631Z [sysco_oms] info: false
+2020-12-25T07:38:28.640Z [sysco_oms] info: false
+2020-12-25T07:38:28.646Z [sysco_oms] info: false
+2020-12-25T07:38:28.658Z [sysco_oms] info: false
+2020-12-25T07:39:05.366Z [sysco_oms] info: false
+2020-12-25T07:39:05.423Z [sysco_oms] info: false
+2020-12-25T07:39:05.427Z [sysco_oms] info: false
+2020-12-25T07:39:05.430Z [sysco_oms] info: false
+2020-12-25T07:41:40.065Z [sysco_oms] info: false
+2020-12-25T07:41:40.088Z [sysco_oms] info: false
+2020-12-25T07:41:40.092Z [sysco_oms] info: false
+2020-12-25T07:41:40.095Z [sysco_oms] info: false
+2020-12-25T07:43:29.754Z [sysco_oms] info: false
+2020-12-25T07:43:29.762Z [sysco_oms] info: false
+2020-12-25T07:43:29.766Z [sysco_oms] info: false
+2020-12-25T07:43:29.769Z [sysco_oms] info: false
+2020-12-25T07:57:59.503Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T07:58:50.591Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:152:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T08:33:23.670Z [sysco_oms] info: false
+2020-12-25T08:33:23.680Z [sysco_oms] info: false
+2020-12-25T08:33:23.683Z [sysco_oms] info: false
+2020-12-25T08:33:23.687Z [sysco_oms] info: false
+2020-12-25T10:24:43.044Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-31,toDate=2020-12-31,page=0,limit=10}
+2020-12-25T10:25:03.817Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-01-31,toDate=2020-12-31,page=0,limit=10}
+2020-12-25T10:28:45.666Z [sysco_oms] info: false
+2020-12-25T10:28:45.675Z [sysco_oms] info: false
+2020-12-25T10:28:45.680Z [sysco_oms] info: false
+2020-12-25T10:28:45.684Z [sysco_oms] info: false
+2020-12-25T10:29:26.413Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:30:17.501Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:153:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T10:31:43.625Z [sysco_oms] info: false
+2020-12-25T10:31:43.634Z [sysco_oms] info: false
+2020-12-25T10:31:43.639Z [sysco_oms] info: false
+2020-12-25T10:31:43.643Z [sysco_oms] info: false
+2020-12-25T10:31:47.174Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:35:32.442Z [sysco_oms] info: false
+2020-12-25T10:35:32.450Z [sysco_oms] info: false
+2020-12-25T10:35:32.453Z [sysco_oms] info: false
+2020-12-25T10:35:32.457Z [sysco_oms] info: false
+2020-12-25T10:35:38.033Z [sysco_oms] info: false
+2020-12-25T10:35:38.039Z [sysco_oms] info: false
+2020-12-25T10:35:38.043Z [sysco_oms] info: false
+2020-12-25T10:35:38.046Z [sysco_oms] info: false
+2020-12-25T10:35:44.024Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:36:35.111Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:154:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T10:37:01.258Z [sysco_oms] info: false
+2020-12-25T10:37:01.265Z [sysco_oms] info: false
+2020-12-25T10:37:01.268Z [sysco_oms] info: false
+2020-12-25T10:37:01.272Z [sysco_oms] info: false
+2020-12-25T10:37:03.548Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:39:13.956Z [sysco_oms] info: false
+2020-12-25T10:39:14.016Z [sysco_oms] info: false
+2020-12-25T10:39:14.020Z [sysco_oms] info: false
+2020-12-25T10:39:14.023Z [sysco_oms] info: false
+2020-12-25T10:39:21.342Z [sysco_oms] info: false
+2020-12-25T10:39:21.366Z [sysco_oms] info: false
+2020-12-25T10:39:21.370Z [sysco_oms] info: false
+2020-12-25T10:39:21.373Z [sysco_oms] info: false
+2020-12-25T10:39:40.886Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:40:31.980Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:154:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T10:53:28.512Z [sysco_oms] info: false
+2020-12-25T10:53:28.576Z [sysco_oms] info: false
+2020-12-25T10:53:28.580Z [sysco_oms] info: false
+2020-12-25T10:53:28.584Z [sysco_oms] info: false
+2020-12-25T10:54:03.356Z [sysco_oms] info: false
+2020-12-25T10:54:03.378Z [sysco_oms] info: false
+2020-12-25T10:54:03.381Z [sysco_oms] info: false
+2020-12-25T10:54:03.384Z [sysco_oms] info: false
+2020-12-25T10:58:02.709Z [sysco_oms] info: false
+2020-12-25T10:58:02.720Z [sysco_oms] info: false
+2020-12-25T10:58:02.725Z [sysco_oms] info: false
+2020-12-25T10:58:02.730Z [sysco_oms] info: false
+2020-12-25T10:58:15.321Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T10:58:27.669Z [sysco_oms] info: false
+2020-12-25T10:58:27.677Z [sysco_oms] info: false
+2020-12-25T10:58:27.681Z [sysco_oms] info: false
+2020-12-25T10:58:27.684Z [sysco_oms] info: false
+2020-12-25T11:18:24.458Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T11:19:15.534Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:157:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T15:14:43.681Z [sysco_oms] info: false
+2020-12-25T15:15:19.370Z [sysco_oms] info: false
+2020-12-25T15:15:50.612Z [sysco_oms] info: false
+2020-12-25T15:17:42.318Z [sysco_oms] info: false
+2020-12-25T15:17:42.324Z [sysco_oms] info: false
+2020-12-25T15:17:42.328Z [sysco_oms] info: false
+2020-12-25T15:17:42.331Z [sysco_oms] info: false
+2020-12-25T15:17:47.147Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T15:18:35.756Z [sysco_oms] info: false
+2020-12-25T15:18:35.763Z [sysco_oms] info: false
+2020-12-25T15:18:35.767Z [sysco_oms] info: false
+2020-12-25T15:18:35.770Z [sysco_oms] info: false
+2020-12-25T15:18:39.088Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T15:19:00.963Z [sysco_oms] info: false
+2020-12-25T15:19:00.970Z [sysco_oms] info: false
+2020-12-25T15:19:00.974Z [sysco_oms] info: false
+2020-12-25T15:19:00.977Z [sysco_oms] info: false
+2020-12-25T15:19:03.719Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T15:19:10.836Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-25T15:19:54.897Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:157:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:25) }
+2020-12-25T15:20:00.295Z [sysco_oms] info: false
+2020-12-25T15:20:00.301Z [sysco_oms] info: false
+2020-12-25T15:20:00.305Z [sysco_oms] info: false
+2020-12-25T15:20:00.308Z [sysco_oms] info: false
+2020-12-25T18:29:14.481Z [sysco_oms] info: false
+2020-12-25T18:29:14.490Z [sysco_oms] info: false
+2020-12-25T18:29:14.498Z [sysco_oms] info: false
+2020-12-25T18:29:14.502Z [sysco_oms] info: false
+2020-12-25T18:41:02.017Z [sysco_oms] info: false
+2020-12-25T18:41:02.024Z [sysco_oms] info: false
+2020-12-25T18:41:02.031Z [sysco_oms] info: false
+2020-12-25T18:41:02.034Z [sysco_oms] info: false
+2020-12-25T18:42:33.844Z [sysco_oms] info: false
+2020-12-25T18:42:33.851Z [sysco_oms] info: false
+2020-12-25T18:42:33.855Z [sysco_oms] info: false
+2020-12-25T18:42:33.858Z [sysco_oms] info: false
+2020-12-25T19:00:02.312Z [sysco_oms] info: false
+2020-12-25T19:00:02.321Z [sysco_oms] info: false
+2020-12-25T19:00:02.325Z [sysco_oms] info: false
+2020-12-25T19:00:02.328Z [sysco_oms] info: false
+2020-12-25T19:00:43.399Z [sysco_oms] info: false
+2020-12-25T19:00:43.409Z [sysco_oms] info: false
+2020-12-25T19:00:43.413Z [sysco_oms] info: false
+2020-12-25T19:00:43.416Z [sysco_oms] info: false
+2020-12-25T19:05:23.040Z [sysco_oms] info: false
+2020-12-25T19:05:23.047Z [sysco_oms] info: false
+2020-12-25T19:05:23.054Z [sysco_oms] info: false
+2020-12-25T19:05:23.057Z [sysco_oms] info: false
+2020-12-25T19:06:15.339Z [sysco_oms] info: false
+2020-12-25T19:06:15.376Z [sysco_oms] info: false
+2020-12-25T19:06:15.401Z [sysco_oms] info: false
+2020-12-25T19:09:47.844Z [sysco_oms] info: false
+2020-12-25T19:09:47.851Z [sysco_oms] info: false
+2020-12-25T19:09:47.858Z [sysco_oms] info: false
+2020-12-25T19:09:47.861Z [sysco_oms] info: false
+2020-12-25T19:10:08.668Z [sysco_oms] info: false
+2020-12-25T19:10:08.672Z [sysco_oms] info: false
+2020-12-25T19:10:08.676Z [sysco_oms] info: false
+2020-12-26T03:04:25.475Z [sysco_oms] info: false
+2020-12-26T03:04:25.482Z [sysco_oms] info: false
+2020-12-26T03:04:25.489Z [sysco_oms] info: false
+2020-12-26T03:04:25.492Z [sysco_oms] info: false
+2020-12-26T03:07:15.749Z [sysco_oms] info: false
+2020-12-26T03:07:15.755Z [sysco_oms] info: false
+2020-12-26T03:07:15.761Z [sysco_oms] info: false
+2020-12-26T03:08:57.093Z [sysco_oms] info: false
+2020-12-26T03:08:57.099Z [sysco_oms] info: false
+2020-12-26T03:08:57.106Z [sysco_oms] info: false
+2020-12-26T03:08:57.109Z [sysco_oms] info: false
+2020-12-26T03:09:01.099Z [sysco_oms] info: false
+2020-12-26T03:09:01.104Z [sysco_oms] info: false
+2020-12-26T03:09:01.108Z [sysco_oms] info: false
+2020-12-26T03:09:38.217Z [sysco_oms] info: false
+2020-12-26T03:09:38.225Z [sysco_oms] info: false
+2020-12-26T03:09:38.232Z [sysco_oms] info: false
+2020-12-26T03:09:38.236Z [sysco_oms] info: false
+2020-12-26T04:29:42.298Z [sysco_oms] info: false
+2020-12-26T04:29:42.308Z [sysco_oms] info: false
+2020-12-26T04:29:42.313Z [sysco_oms] info: false
+2020-12-26T04:29:42.317Z [sysco_oms] info: false
+2020-12-26T04:31:03.173Z [sysco_oms] info: false
+2020-12-26T04:31:03.179Z [sysco_oms] info: false
+2020-12-26T04:31:03.186Z [sysco_oms] info: false
+2020-12-26T04:31:03.190Z [sysco_oms] info: false
+2020-12-26T04:31:07.579Z [sysco_oms] info: false
+2020-12-26T04:31:07.583Z [sysco_oms] info: false
+2020-12-26T04:31:07.587Z [sysco_oms] info: false
+2020-12-26T04:32:05.967Z [sysco_oms] info: false
+2020-12-26T04:32:05.974Z [sysco_oms] info: false
+2020-12-26T04:32:05.981Z [sysco_oms] info: false
+2020-12-26T04:32:05.985Z [sysco_oms] info: false
+2020-12-26T04:32:50.692Z [sysco_oms] info: false
+2020-12-26T04:32:50.699Z [sysco_oms] info: false
+2020-12-26T04:32:50.705Z [sysco_oms] info: false
+2020-12-26T04:32:50.709Z [sysco_oms] info: false
+2020-12-26T04:33:28.660Z [sysco_oms] info: false
+2020-12-26T04:33:28.667Z [sysco_oms] info: false
+2020-12-26T04:33:28.675Z [sysco_oms] info: false
+2020-12-26T04:33:28.678Z [sysco_oms] info: false
+2020-12-26T04:34:11.478Z [sysco_oms] info: false
+2020-12-26T04:34:11.485Z [sysco_oms] info: false
+2020-12-26T04:34:11.491Z [sysco_oms] info: false
+2020-12-26T04:34:11.495Z [sysco_oms] info: false
+2020-12-26T04:34:46.430Z [sysco_oms] info: false
+2020-12-26T04:34:46.440Z [sysco_oms] info: false
+2020-12-26T04:34:46.444Z [sysco_oms] info: false
+2020-12-26T04:34:46.448Z [sysco_oms] info: false
+2020-12-26T04:35:23.862Z [sysco_oms] info: false
+2020-12-26T04:35:23.869Z [sysco_oms] info: false
+2020-12-26T04:35:23.876Z [sysco_oms] info: false
+2020-12-26T04:35:23.879Z [sysco_oms] info: false
+2020-12-26T04:35:49.417Z [sysco_oms] info: false
+2020-12-26T04:35:49.423Z [sysco_oms] info: false
+2020-12-26T04:35:49.430Z [sysco_oms] info: false
+2020-12-26T04:35:49.433Z [sysco_oms] info: false
+2020-12-26T04:35:55.400Z [sysco_oms] info: false
+2020-12-26T04:35:55.404Z [sysco_oms] info: false
+2020-12-26T04:35:55.408Z [sysco_oms] info: false
+2020-12-26T04:36:47.811Z [sysco_oms] info: false
+2020-12-26T04:36:47.815Z [sysco_oms] info: false
+2020-12-26T04:36:47.819Z [sysco_oms] info: false
+2020-12-26T04:37:11.038Z [sysco_oms] info: false
+2020-12-26T04:37:11.045Z [sysco_oms] info: false
+2020-12-26T04:37:11.053Z [sysco_oms] info: false
+2020-12-26T04:37:11.056Z [sysco_oms] info: false
+2020-12-26T04:42:09.349Z [sysco_oms] info: false
+2020-12-26T04:42:09.358Z [sysco_oms] info: false
+2020-12-26T04:42:09.367Z [sysco_oms] info: false
+2020-12-26T04:42:09.373Z [sysco_oms] info: false
+2020-12-26T04:42:38.117Z [sysco_oms] info: false
+2020-12-26T04:42:38.126Z [sysco_oms] info: false
+2020-12-26T04:42:38.134Z [sysco_oms] info: false
+2020-12-26T04:42:38.139Z [sysco_oms] info: false
+2020-12-26T04:43:50.532Z [sysco_oms] info: false
+2020-12-26T04:43:50.541Z [sysco_oms] info: false
+2020-12-26T04:43:50.548Z [sysco_oms] info: false
+2020-12-26T04:43:50.553Z [sysco_oms] info: false
+2020-12-26T04:43:57.323Z [sysco_oms] info: false
+2020-12-26T04:43:57.333Z [sysco_oms] info: false
+2020-12-26T04:43:57.342Z [sysco_oms] info: false
+2020-12-26T04:43:57.346Z [sysco_oms] info: false
+2020-12-26T04:46:27.551Z [sysco_oms] info: false
+2020-12-26T04:46:27.557Z [sysco_oms] info: false
+2020-12-26T04:46:27.564Z [sysco_oms] info: false
+2020-12-26T04:46:27.568Z [sysco_oms] info: false
+2020-12-26T04:46:32.636Z [sysco_oms] info: false
+2020-12-26T04:46:32.646Z [sysco_oms] info: false
+2020-12-26T04:46:32.649Z [sysco_oms] info: false
+2020-12-26T04:46:32.652Z [sysco_oms] info: false
+2020-12-26T04:46:36.392Z [sysco_oms] info: false
+2020-12-26T04:46:36.397Z [sysco_oms] info: false
+2020-12-26T04:46:36.401Z [sysco_oms] info: false
+2020-12-26T04:50:19.489Z [sysco_oms] info: false
+2020-12-26T04:50:19.497Z [sysco_oms] info: false
+2020-12-26T04:50:19.501Z [sysco_oms] info: false
+2020-12-26T04:50:19.504Z [sysco_oms] info: false
+2020-12-26T04:50:26.488Z [sysco_oms] info: false
+2020-12-26T04:50:26.496Z [sysco_oms] info: false
+2020-12-26T04:50:26.503Z [sysco_oms] info: false
+2020-12-26T04:50:26.507Z [sysco_oms] info: false
+2020-12-26T04:56:51.352Z [sysco_oms] info: false
+2020-12-26T04:56:51.359Z [sysco_oms] info: false
+2020-12-26T04:56:51.366Z [sysco_oms] info: false
+2020-12-26T04:56:51.369Z [sysco_oms] info: false
+2020-12-26T04:57:05.156Z [sysco_oms] info: false
+2020-12-26T04:57:05.167Z [sysco_oms] info: false
+2020-12-26T04:57:05.170Z [sysco_oms] info: false
+2020-12-26T04:57:05.173Z [sysco_oms] info: false
+2020-12-26T04:57:11.492Z [sysco_oms] info: false
+2020-12-26T04:57:11.496Z [sysco_oms] info: false
+2020-12-26T04:57:11.500Z [sysco_oms] info: false
+2020-12-26T04:57:36.375Z [sysco_oms] info: false
+2020-12-26T04:57:36.382Z [sysco_oms] info: false
+2020-12-26T04:57:36.389Z [sysco_oms] info: false
+2020-12-26T04:57:36.392Z [sysco_oms] info: false
+2020-12-26T04:57:40.439Z [sysco_oms] info: false
+2020-12-26T04:57:40.530Z [sysco_oms] info: false
+2020-12-26T04:57:40.533Z [sysco_oms] info: false
+2020-12-26T04:57:40.535Z [sysco_oms] info: false
+2020-12-26T04:57:48.056Z [sysco_oms] info: false
+2020-12-26T04:57:48.099Z [sysco_oms] info: false
+2020-12-26T04:57:48.103Z [sysco_oms] info: false
+2020-12-26T04:59:15.300Z [sysco_oms] info: false
+2020-12-26T04:59:15.384Z [sysco_oms] info: false
+2020-12-26T04:59:15.387Z [sysco_oms] info: false
+2020-12-26T04:59:15.393Z [sysco_oms] info: false
+2020-12-26T05:00:32.946Z [sysco_oms] info: false
+2020-12-26T05:00:33.034Z [sysco_oms] info: false
+2020-12-26T05:00:33.037Z [sysco_oms] info: false
+2020-12-26T05:00:33.042Z [sysco_oms] info: false
+2020-12-26T05:00:41.185Z [sysco_oms] info: false
+2020-12-26T05:00:41.227Z [sysco_oms] info: false
+2020-12-26T05:00:41.230Z [sysco_oms] info: false
+2020-12-26T05:00:41.266Z [sysco_oms] error: TypeError: (0 , _orderDao.orderStatusByIdDao) is not a function
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:69:31)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:40:35)
+    at Object.asyncJestTest (/home/windulakularatne/sysco-test-project/oms-node/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+    at new Promise (<anonymous>)
+    at mapper (/home/windulakularatne/sysco-test-project/oms-node/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/jest-jasmine2/build/queueRunner.js:75:41 error OrderController cancelOrder %s
+2020-12-26T05:02:36.044Z [sysco_oms] info: false
+2020-12-26T05:02:36.126Z [sysco_oms] info: false
+2020-12-26T05:02:36.128Z [sysco_oms] info: false
+2020-12-26T05:02:36.134Z [sysco_oms] info: false
+2020-12-26T05:04:28.108Z [sysco_oms] info: false
+2020-12-26T05:04:28.190Z [sysco_oms] info: false
+2020-12-26T05:04:28.192Z [sysco_oms] info: false
+2020-12-26T05:04:28.195Z [sysco_oms] info: false
+2020-12-26T05:05:06.184Z [sysco_oms] info: false
+2020-12-26T05:05:06.263Z [sysco_oms] info: false
+2020-12-26T05:05:06.265Z [sysco_oms] info: false
+2020-12-26T05:05:06.268Z [sysco_oms] info: false
+2020-12-26T05:05:56.838Z [sysco_oms] info: false
+2020-12-26T05:05:56.917Z [sysco_oms] info: false
+2020-12-26T05:05:56.920Z [sysco_oms] info: false
+2020-12-26T05:05:56.925Z [sysco_oms] info: false
+2020-12-26T05:13:21.691Z [sysco_oms] info: false
+2020-12-26T05:13:21.731Z [sysco_oms] info: false
+2020-12-26T05:13:21.734Z [sysco_oms] info: false
+2020-12-26T05:13:21.769Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:40:16) error OrderController cancelOrder %s
+2020-12-26T05:13:39.072Z [sysco_oms] info: false
+2020-12-26T05:13:39.161Z [sysco_oms] info: false
+2020-12-26T05:13:39.164Z [sysco_oms] info: false
+2020-12-26T05:13:39.167Z [sysco_oms] info: false
+2020-12-26T05:13:43.217Z [sysco_oms] info: false
+2020-12-26T05:13:43.260Z [sysco_oms] info: false
+2020-12-26T05:13:43.263Z [sysco_oms] info: false
+2020-12-26T07:59:23.838Z [sysco_oms] info: false
+2020-12-26T07:59:23.936Z [sysco_oms] info: false
+2020-12-26T07:59:23.938Z [sysco_oms] info: false
+2020-12-26T07:59:23.945Z [sysco_oms] info: false
+2020-12-26T08:00:58.501Z [sysco_oms] info: false
+2020-12-26T08:00:58.591Z [sysco_oms] info: false
+2020-12-26T08:00:58.593Z [sysco_oms] info: false
+2020-12-26T08:00:58.596Z [sysco_oms] info: false
+2020-12-26T08:01:05.304Z [sysco_oms] info: false
+2020-12-26T08:01:05.343Z [sysco_oms] info: false
+2020-12-26T08:01:05.347Z [sysco_oms] info: false
+2020-12-26T08:01:05.398Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T08:58:07.903Z [sysco_oms] info: false
+2020-12-26T08:58:07.991Z [sysco_oms] info: false
+2020-12-26T08:58:07.994Z [sysco_oms] info: false
+2020-12-26T08:58:08.001Z [sysco_oms] info: false
+2020-12-26T08:58:22.826Z [sysco_oms] info: false
+2020-12-26T08:58:22.911Z [sysco_oms] info: false
+2020-12-26T08:58:22.914Z [sysco_oms] info: false
+2020-12-26T08:58:22.920Z [sysco_oms] info: false
+2020-12-26T08:59:07.470Z [sysco_oms] info: false
+2020-12-26T08:59:07.557Z [sysco_oms] info: false
+2020-12-26T08:59:07.559Z [sysco_oms] info: false
+2020-12-26T08:59:07.565Z [sysco_oms] info: false
+2020-12-26T12:36:33.163Z [sysco_oms] info: false
+2020-12-26T12:36:33.197Z [sysco_oms] info: false
+2020-12-26T12:36:33.200Z [sysco_oms] info: false
+2020-12-26T12:36:33.245Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:40:56.110Z [sysco_oms] info: false
+2020-12-26T12:40:56.198Z [sysco_oms] info: false
+2020-12-26T12:40:56.202Z [sysco_oms] info: false
+2020-12-26T12:40:56.207Z [sysco_oms] info: false
+2020-12-26T12:42:18.816Z [sysco_oms] info: false
+2020-12-26T12:42:18.897Z [sysco_oms] info: false
+2020-12-26T12:42:18.899Z [sysco_oms] info: false
+2020-12-26T12:42:18.902Z [sysco_oms] info: false
+2020-12-26T12:42:28.002Z [sysco_oms] info: false
+2020-12-26T12:42:28.035Z [sysco_oms] info: false
+2020-12-26T12:42:28.038Z [sysco_oms] info: false
+2020-12-26T12:43:16.541Z [sysco_oms] info: false
+2020-12-26T12:43:16.621Z [sysco_oms] info: false
+2020-12-26T12:43:16.623Z [sysco_oms] info: false
+2020-12-26T12:43:16.626Z [sysco_oms] info: false
+2020-12-26T12:43:49.694Z [sysco_oms] info: false
+2020-12-26T12:43:49.730Z [sysco_oms] info: false
+2020-12-26T12:43:49.733Z [sysco_oms] info: false
+2020-12-26T12:43:49.767Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:45:46.864Z [sysco_oms] info: false
+2020-12-26T12:45:46.943Z [sysco_oms] info: false
+2020-12-26T12:45:46.945Z [sysco_oms] info: false
+2020-12-26T12:45:46.948Z [sysco_oms] info: false
+2020-12-26T12:46:00.398Z [sysco_oms] info: false
+2020-12-26T12:46:00.432Z [sysco_oms] info: false
+2020-12-26T12:46:00.434Z [sysco_oms] info: false
+2020-12-26T12:46:00.470Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:46:48.879Z [sysco_oms] info: false
+2020-12-26T12:46:48.967Z [sysco_oms] info: false
+2020-12-26T12:46:48.972Z [sysco_oms] info: false
+2020-12-26T12:46:48.974Z [sysco_oms] info: false
+2020-12-26T12:47:18.511Z [sysco_oms] info: false
+2020-12-26T12:47:18.588Z [sysco_oms] info: false
+2020-12-26T12:47:18.593Z [sysco_oms] info: false
+2020-12-26T12:47:18.596Z [sysco_oms] info: false
+2020-12-26T12:47:22.930Z [sysco_oms] info: false
+2020-12-26T12:47:22.968Z [sysco_oms] info: false
+2020-12-26T12:47:22.971Z [sysco_oms] info: false
+2020-12-26T12:47:23.009Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:47:37.693Z [sysco_oms] info: false
+2020-12-26T12:47:37.773Z [sysco_oms] info: false
+2020-12-26T12:47:37.775Z [sysco_oms] info: false
+2020-12-26T12:47:37.777Z [sysco_oms] info: false
+2020-12-26T12:47:41.750Z [sysco_oms] info: false
+2020-12-26T12:47:41.785Z [sysco_oms] info: false
+2020-12-26T12:47:41.788Z [sysco_oms] info: false
+2020-12-26T12:49:16.832Z [sysco_oms] info: false
+2020-12-26T12:49:16.918Z [sysco_oms] info: false
+2020-12-26T12:49:16.921Z [sysco_oms] info: false
+2020-12-26T12:49:16.923Z [sysco_oms] info: false
+2020-12-26T12:49:56.257Z [sysco_oms] info: false
+2020-12-26T12:49:56.340Z [sysco_oms] info: false
+2020-12-26T12:49:56.343Z [sysco_oms] info: false
+2020-12-26T12:49:56.346Z [sysco_oms] info: false
+2020-12-26T12:50:01.807Z [sysco_oms] info: false
+2020-12-26T12:50:01.836Z [sysco_oms] info: false
+2020-12-26T12:50:01.838Z [sysco_oms] info: false
+2020-12-26T12:50:33.010Z [sysco_oms] info: false
+2020-12-26T12:50:33.099Z [sysco_oms] info: false
+2020-12-26T12:50:33.102Z [sysco_oms] info: false
+2020-12-26T12:50:33.104Z [sysco_oms] info: false
+2020-12-26T12:51:08.803Z [sysco_oms] info: false
+2020-12-26T12:51:08.885Z [sysco_oms] info: false
+2020-12-26T12:51:08.888Z [sysco_oms] info: false
+2020-12-26T12:51:08.893Z [sysco_oms] info: false
+2020-12-26T12:51:12.287Z [sysco_oms] info: false
+2020-12-26T12:51:12.319Z [sysco_oms] info: false
+2020-12-26T12:51:12.323Z [sysco_oms] info: false
+2020-12-26T12:51:12.353Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:51:20.252Z [sysco_oms] info: false
+2020-12-26T12:51:20.333Z [sysco_oms] info: false
+2020-12-26T12:51:20.336Z [sysco_oms] info: false
+2020-12-26T12:51:20.341Z [sysco_oms] info: false
+2020-12-26T12:51:46.470Z [sysco_oms] info: false
+2020-12-26T12:51:46.554Z [sysco_oms] info: false
+2020-12-26T12:51:46.557Z [sysco_oms] info: false
+2020-12-26T12:51:46.560Z [sysco_oms] info: false
+2020-12-26T12:52:20.782Z [sysco_oms] info: false
+2020-12-26T12:52:36.447Z [sysco_oms] info: false
+2020-12-26T12:52:36.540Z [sysco_oms] info: false
+2020-12-26T12:52:36.542Z [sysco_oms] info: false
+2020-12-26T12:52:36.547Z [sysco_oms] info: false
+2020-12-26T12:53:48.474Z [sysco_oms] info: false
+2020-12-26T12:53:48.554Z [sysco_oms] info: false
+2020-12-26T12:53:48.557Z [sysco_oms] info: false
+2020-12-26T12:53:48.559Z [sysco_oms] info: false
+2020-12-26T12:53:52.444Z [sysco_oms] info: false
+2020-12-26T12:53:52.475Z [sysco_oms] info: false
+2020-12-26T12:53:52.478Z [sysco_oms] info: false
+2020-12-26T12:53:52.507Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T12:54:28.437Z [sysco_oms] info: false
+2020-12-26T12:54:28.521Z [sysco_oms] info: false
+2020-12-26T12:54:28.523Z [sysco_oms] info: false
+2020-12-26T12:54:28.526Z [sysco_oms] info: false
+2020-12-26T12:54:55.866Z [sysco_oms] info: false
+2020-12-26T12:54:55.950Z [sysco_oms] info: false
+2020-12-26T12:54:55.952Z [sysco_oms] info: false
+2020-12-26T12:54:55.955Z [sysco_oms] info: false
+2020-12-26T12:55:03.291Z [sysco_oms] info: false
+2020-12-26T12:55:03.319Z [sysco_oms] info: false
+2020-12-26T12:55:03.322Z [sysco_oms] info: false
+2020-12-26T12:56:00.904Z [sysco_oms] info: false
+2020-12-26T12:56:00.986Z [sysco_oms] info: false
+2020-12-26T12:56:00.989Z [sysco_oms] info: false
+2020-12-26T12:56:00.994Z [sysco_oms] info: false
+2020-12-26T12:58:12.939Z [sysco_oms] info: false
+2020-12-26T12:58:13.021Z [sysco_oms] info: false
+2020-12-26T12:58:13.024Z [sysco_oms] info: false
+2020-12-26T12:58:13.028Z [sysco_oms] info: false
+2020-12-26T12:58:17.208Z [sysco_oms] info: false
+2020-12-26T12:58:17.238Z [sysco_oms] info: false
+2020-12-26T12:58:17.241Z [sysco_oms] info: false
+2020-12-26T12:59:22.803Z [sysco_oms] info: false
+2020-12-26T12:59:22.885Z [sysco_oms] info: false
+2020-12-26T12:59:22.887Z [sysco_oms] info: false
+2020-12-26T12:59:22.890Z [sysco_oms] info: false
+2020-12-26T12:59:54.580Z [sysco_oms] info: false
+2020-12-26T12:59:54.611Z [sysco_oms] info: false
+2020-12-26T12:59:54.614Z [sysco_oms] info: false
+2020-12-26T12:59:54.645Z [sysco_oms] error: TypeError: Cannot read property 'FAIL' of undefined
+    at OrderService.cancelOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:73:41)
+    at Object.<anonymous> (/home/windulakularatne/sysco-test-project/oms-node/src/service/__tests__/orderSerive.test.js:43:16) error OrderController cancelOrder %s
+2020-12-26T13:00:32.932Z [sysco_oms] info: false
+2020-12-26T13:00:33.010Z [sysco_oms] info: false
+2020-12-26T13:00:33.015Z [sysco_oms] info: false
+2020-12-26T13:00:33.017Z [sysco_oms] info: false
+2020-12-26T13:03:41.839Z [sysco_oms] info: false
+2020-12-26T13:03:41.920Z [sysco_oms] info: false
+2020-12-26T13:03:41.923Z [sysco_oms] info: false
+2020-12-26T13:03:41.925Z [sysco_oms] info: false
+2020-12-26T13:04:09.141Z [sysco_oms] info: false
+2020-12-26T13:04:09.221Z [sysco_oms] info: false
+2020-12-26T13:04:09.223Z [sysco_oms] info: false
+2020-12-26T13:04:09.228Z [sysco_oms] info: false
+2020-12-26T13:04:16.600Z [sysco_oms] info: false
+2020-12-26T13:04:16.629Z [sysco_oms] info: false
+2020-12-26T13:04:16.632Z [sysco_oms] info: false
+2020-12-26T13:04:16.677Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T13:04:38.573Z [sysco_oms] info: false
+2020-12-26T13:04:38.659Z [sysco_oms] info: false
+2020-12-26T13:04:38.661Z [sysco_oms] info: false
+2020-12-26T13:04:38.666Z [sysco_oms] info: false
+2020-12-26T13:04:41.631Z [sysco_oms] info: false
+2020-12-26T13:06:47.524Z [sysco_oms] info: false
+2020-12-26T13:06:47.611Z [sysco_oms] info: false
+2020-12-26T13:06:47.613Z [sysco_oms] info: false
+2020-12-26T13:06:47.616Z [sysco_oms] info: false
+2020-12-26T13:06:52.033Z [sysco_oms] info: false
+2020-12-26T13:07:07.195Z [sysco_oms] info: false
+2020-12-26T13:07:07.291Z [sysco_oms] info: false
+2020-12-26T13:07:07.294Z [sysco_oms] info: false
+2020-12-26T13:07:07.297Z [sysco_oms] info: false
+2020-12-26T13:08:00.654Z [sysco_oms] info: false
+2020-12-26T13:08:00.735Z [sysco_oms] info: false
+2020-12-26T13:08:00.737Z [sysco_oms] info: false
+2020-12-26T13:08:00.740Z [sysco_oms] info: false
+2020-12-26T13:08:05.183Z [sysco_oms] info: false
+2020-12-26T13:08:05.212Z [sysco_oms] info: false
+2020-12-26T13:08:05.215Z [sysco_oms] info: false
+2020-12-26T13:08:05.241Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T13:08:21.859Z [sysco_oms] info: false
+2020-12-26T13:08:21.939Z [sysco_oms] info: false
+2020-12-26T13:08:21.942Z [sysco_oms] info: false
+2020-12-26T13:08:21.946Z [sysco_oms] info: false
+2020-12-26T13:13:33.257Z [sysco_oms] info: false
+2020-12-26T13:13:33.342Z [sysco_oms] info: false
+2020-12-26T13:13:33.345Z [sysco_oms] info: false
+2020-12-26T13:13:33.350Z [sysco_oms] info: false
+2020-12-26T13:13:38.141Z [sysco_oms] info: false
+2020-12-26T13:13:38.226Z [sysco_oms] info: false
+2020-12-26T13:13:38.231Z [sysco_oms] info: false
+2020-12-26T13:13:38.233Z [sysco_oms] info: false
+2020-12-26T13:15:17.551Z [sysco_oms] info: false
+2020-12-26T13:15:17.641Z [sysco_oms] info: false
+2020-12-26T13:15:17.643Z [sysco_oms] info: false
+2020-12-26T13:15:17.649Z [sysco_oms] info: false
+2020-12-26T13:15:36.879Z [sysco_oms] info: false
+2020-12-26T13:15:36.908Z [sysco_oms] info: false
+2020-12-26T13:15:36.912Z [sysco_oms] info: false
+2020-12-26T13:15:36.940Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T13:15:36.941Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-26T13:16:06.322Z [sysco_oms] info: false
+2020-12-26T13:16:06.407Z [sysco_oms] info: false
+2020-12-26T13:16:06.409Z [sysco_oms] info: false
+2020-12-26T13:16:06.411Z [sysco_oms] info: false
+2020-12-26T13:27:23.187Z [sysco_oms] info: false
+2020-12-26T13:27:23.274Z [sysco_oms] info: false
+2020-12-26T13:27:23.276Z [sysco_oms] info: false
+2020-12-26T13:27:23.278Z [sysco_oms] info: false
+2020-12-26T13:27:58.293Z [sysco_oms] info: false
+2020-12-26T13:27:58.397Z [sysco_oms] info: false
+2020-12-26T13:27:58.400Z [sysco_oms] info: false
+2020-12-26T13:27:58.407Z [sysco_oms] info: false
+2020-12-26T13:30:01.772Z [sysco_oms] info: false
+2020-12-26T13:30:01.850Z [sysco_oms] info: false
+2020-12-26T13:30:01.852Z [sysco_oms] info: false
+2020-12-26T13:30:01.857Z [sysco_oms] info: false
+2020-12-26T13:30:55.314Z [sysco_oms] info: false
+2020-12-26T13:30:55.399Z [sysco_oms] info: false
+2020-12-26T13:30:55.401Z [sysco_oms] info: false
+2020-12-26T13:30:55.406Z [sysco_oms] info: false
+2020-12-26T13:31:35.811Z [sysco_oms] info: false
+2020-12-26T13:31:35.892Z [sysco_oms] info: false
+2020-12-26T13:31:35.894Z [sysco_oms] info: false
+2020-12-26T13:31:35.897Z [sysco_oms] info: false
+2020-12-26T13:31:50.951Z [sysco_oms] info: false
+2020-12-26T13:31:51.029Z [sysco_oms] info: false
+2020-12-26T13:31:51.032Z [sysco_oms] info: false
+2020-12-26T13:31:51.037Z [sysco_oms] info: false
+2020-12-26T16:06:53.717Z [sysco_oms] info: false
+2020-12-26T16:06:53.804Z [sysco_oms] info: false
+2020-12-26T16:06:53.807Z [sysco_oms] info: false
+2020-12-26T16:06:53.813Z [sysco_oms] info: false
+2020-12-26T16:34:18.119Z [sysco_oms] info: false
+2020-12-26T16:34:18.202Z [sysco_oms] info: false
+2020-12-26T16:34:18.205Z [sysco_oms] info: false
+2020-12-26T16:34:18.210Z [sysco_oms] info: false
+2020-12-26T16:42:32.131Z [sysco_oms] info: false
+2020-12-26T16:42:32.210Z [sysco_oms] info: false
+2020-12-26T16:42:32.213Z [sysco_oms] info: false
+2020-12-26T16:42:32.215Z [sysco_oms] info: false
+2020-12-26T17:06:12.113Z [sysco_oms] info: false
+2020-12-26T17:06:12.192Z [sysco_oms] info: false
+2020-12-26T17:06:12.195Z [sysco_oms] info: false
+2020-12-26T17:06:12.200Z [sysco_oms] info: false
+2020-12-26T17:08:14.363Z [sysco_oms] info: false
+2020-12-26T17:08:14.453Z [sysco_oms] info: false
+2020-12-26T17:08:14.456Z [sysco_oms] info: false
+2020-12-26T17:08:14.461Z [sysco_oms] info: false
+2020-12-26T17:19:27.399Z [sysco_oms] info: false
+2020-12-26T17:19:27.479Z [sysco_oms] info: false
+2020-12-26T17:19:27.481Z [sysco_oms] info: false
+2020-12-26T17:19:27.483Z [sysco_oms] info: false
+2020-12-26T17:35:35.504Z [sysco_oms] info: false
+2020-12-26T17:35:35.585Z [sysco_oms] info: false
+2020-12-26T17:35:35.588Z [sysco_oms] info: false
+2020-12-26T17:35:35.591Z [sysco_oms] info: false
+2020-12-26T17:36:07.745Z [sysco_oms] info: false
+2020-12-26T17:36:07.839Z [sysco_oms] info: false
+2020-12-26T17:36:07.842Z [sysco_oms] info: false
+2020-12-26T17:36:07.847Z [sysco_oms] info: false
+2020-12-26T17:41:37.949Z [sysco_oms] info: false
+2020-12-26T17:41:38.028Z [sysco_oms] info: false
+2020-12-26T17:41:38.031Z [sysco_oms] info: false
+2020-12-26T17:41:38.036Z [sysco_oms] info: false
+2020-12-26T18:18:22.624Z [sysco_oms] info: false
+2020-12-26T18:18:22.701Z [sysco_oms] info: false
+2020-12-26T18:18:22.704Z [sysco_oms] info: false
+2020-12-26T18:18:22.709Z [sysco_oms] info: false
+2020-12-26T18:19:31.139Z [sysco_oms] info: false
+2020-12-26T18:19:31.224Z [sysco_oms] info: false
+2020-12-26T18:19:31.226Z [sysco_oms] info: false
+2020-12-26T18:19:31.229Z [sysco_oms] info: false
+2020-12-26T18:19:55.040Z [sysco_oms] info: false
+2020-12-26T18:19:55.118Z [sysco_oms] info: false
+2020-12-26T18:19:55.123Z [sysco_oms] info: false
+2020-12-26T18:19:55.127Z [sysco_oms] info: false
+2020-12-26T18:20:47.606Z [sysco_oms] info: false
+2020-12-26T18:20:47.687Z [sysco_oms] info: false
+2020-12-26T18:20:47.689Z [sysco_oms] info: false
+2020-12-26T18:20:47.694Z [sysco_oms] info: false
+2020-12-26T18:20:51.656Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T18:20:51.658Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-26T18:21:26.760Z [sysco_oms] info: false
+2020-12-26T18:21:26.839Z [sysco_oms] info: false
+2020-12-26T18:21:26.844Z [sysco_oms] info: false
+2020-12-26T18:21:26.847Z [sysco_oms] info: false
+2020-12-26T18:21:29.895Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T18:21:29.897Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-26T18:22:01.177Z [sysco_oms] info: false
+2020-12-26T18:22:01.257Z [sysco_oms] info: false
+2020-12-26T18:22:01.259Z [sysco_oms] info: false
+2020-12-26T18:22:01.262Z [sysco_oms] info: false
+2020-12-26T18:22:26.875Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T18:22:26.877Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-26T18:22:46.417Z [sysco_oms] info: false
+2020-12-26T18:22:46.496Z [sysco_oms] info: false
+2020-12-26T18:22:46.499Z [sysco_oms] info: false
+2020-12-26T18:22:46.504Z [sysco_oms] info: false
+2020-12-26T18:22:51.480Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T18:22:51.482Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-26T18:29:50.055Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-26T18:29:50.057Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:11:28.263Z [sysco_oms] info: false
+2020-12-27T06:11:28.342Z [sysco_oms] info: false
+2020-12-27T06:11:28.344Z [sysco_oms] info: false
+2020-12-27T06:11:28.349Z [sysco_oms] info: false
+2020-12-27T06:11:35.543Z [sysco_oms] info: false
+2020-12-27T06:11:35.623Z [sysco_oms] info: false
+2020-12-27T06:11:35.627Z [sysco_oms] info: false
+2020-12-27T06:11:35.633Z [sysco_oms] info: false
+2020-12-27T06:11:42.704Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:11:42.706Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:14:53.192Z [sysco_oms] info: false
+2020-12-27T06:14:53.275Z [sysco_oms] info: false
+2020-12-27T06:14:53.277Z [sysco_oms] info: false
+2020-12-27T06:14:53.282Z [sysco_oms] info: false
+2020-12-27T06:15:18.095Z [sysco_oms] info: false
+2020-12-27T06:15:18.178Z [sysco_oms] info: false
+2020-12-27T06:15:18.181Z [sysco_oms] info: false
+2020-12-27T06:15:18.185Z [sysco_oms] info: false
+2020-12-27T06:15:38.326Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:15:38.328Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:25:22.375Z [sysco_oms] info: false
+2020-12-27T06:25:22.456Z [sysco_oms] info: false
+2020-12-27T06:25:22.459Z [sysco_oms] info: false
+2020-12-27T06:25:22.464Z [sysco_oms] info: false
+2020-12-27T06:25:46.834Z [sysco_oms] info: false
+2020-12-27T06:25:46.924Z [sysco_oms] info: false
+2020-12-27T06:25:46.926Z [sysco_oms] info: false
+2020-12-27T06:25:46.932Z [sysco_oms] info: false
+2020-12-27T06:26:59.199Z [sysco_oms] info: false
+2020-12-27T06:26:59.277Z [sysco_oms] info: false
+2020-12-27T06:26:59.280Z [sysco_oms] info: false
+2020-12-27T06:26:59.285Z [sysco_oms] info: false
+2020-12-27T06:27:16.879Z [sysco_oms] info: false
+2020-12-27T06:27:16.967Z [sysco_oms] info: false
+2020-12-27T06:27:16.969Z [sysco_oms] info: false
+2020-12-27T06:27:16.972Z [sysco_oms] info: false
+2020-12-27T06:27:21.453Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:27:21.455Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:32:03.930Z [sysco_oms] info: false
+2020-12-27T06:32:04.015Z [sysco_oms] info: false
+2020-12-27T06:32:04.018Z [sysco_oms] info: false
+2020-12-27T06:32:04.022Z [sysco_oms] info: false
+2020-12-27T06:33:58.065Z [sysco_oms] info: false
+2020-12-27T06:33:58.145Z [sysco_oms] info: false
+2020-12-27T06:33:58.148Z [sysco_oms] info: false
+2020-12-27T06:33:58.153Z [sysco_oms] info: false
+2020-12-27T06:34:04.514Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:34:04.516Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:35:53.264Z [sysco_oms] info: false
+2020-12-27T06:35:53.344Z [sysco_oms] info: false
+2020-12-27T06:35:53.347Z [sysco_oms] info: false
+2020-12-27T06:35:53.352Z [sysco_oms] info: false
+2020-12-27T06:36:01.465Z [sysco_oms] info: false
+2020-12-27T06:36:01.569Z [sysco_oms] info: false
+2020-12-27T06:36:01.572Z [sysco_oms] info: false
+2020-12-27T06:36:01.576Z [sysco_oms] info: false
+2020-12-27T06:36:13.944Z [sysco_oms] info: false
+2020-12-27T06:36:14.049Z [sysco_oms] info: false
+2020-12-27T06:36:14.055Z [sysco_oms] info: false
+2020-12-27T06:36:14.060Z [sysco_oms] info: false
+2020-12-27T06:36:31.052Z [sysco_oms] info: false
+2020-12-27T06:36:31.135Z [sysco_oms] info: false
+2020-12-27T06:36:31.138Z [sysco_oms] info: false
+2020-12-27T06:36:31.143Z [sysco_oms] info: false
+2020-12-27T06:36:49.243Z [sysco_oms] info: false
+2020-12-27T06:36:49.321Z [sysco_oms] info: false
+2020-12-27T06:36:49.324Z [sysco_oms] info: false
+2020-12-27T06:36:49.329Z [sysco_oms] info: false
+2020-12-27T06:36:55.691Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:36:55.694Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:40:38.303Z [sysco_oms] info: false
+2020-12-27T06:40:38.383Z [sysco_oms] info: false
+2020-12-27T06:40:38.385Z [sysco_oms] info: false
+2020-12-27T06:40:38.390Z [sysco_oms] info: false
+2020-12-27T06:42:04.549Z [sysco_oms] info: false
+2020-12-27T06:42:04.629Z [sysco_oms] info: false
+2020-12-27T06:42:04.631Z [sysco_oms] info: false
+2020-12-27T06:42:04.636Z [sysco_oms] info: false
+2020-12-27T06:42:47.173Z [sysco_oms] info: false
+2020-12-27T06:42:47.257Z [sysco_oms] info: false
+2020-12-27T06:42:47.260Z [sysco_oms] info: false
+2020-12-27T06:42:47.264Z [sysco_oms] info: false
+2020-12-27T06:42:48.171Z [sysco_oms] info: false
+2020-12-27T06:42:48.253Z [sysco_oms] info: false
+2020-12-27T06:42:48.255Z [sysco_oms] info: false
+2020-12-27T06:42:48.260Z [sysco_oms] info: false
+2020-12-27T06:43:49.733Z [sysco_oms] info: false
+2020-12-27T06:43:49.818Z [sysco_oms] info: false
+2020-12-27T06:43:49.821Z [sysco_oms] info: false
+2020-12-27T06:43:49.825Z [sysco_oms] info: false
+2020-12-27T06:48:43.206Z [sysco_oms] info: false
+2020-12-27T06:48:43.292Z [sysco_oms] info: false
+2020-12-27T06:48:43.295Z [sysco_oms] info: false
+2020-12-27T06:48:43.301Z [sysco_oms] info: false
+2020-12-27T06:49:01.832Z [sysco_oms] info: false
+2020-12-27T06:49:01.914Z [sysco_oms] info: false
+2020-12-27T06:49:01.917Z [sysco_oms] info: false
+2020-12-27T06:49:01.919Z [sysco_oms] info: false
+2020-12-27T06:49:11.732Z [sysco_oms] info: false
+2020-12-27T06:49:11.815Z [sysco_oms] info: false
+2020-12-27T06:49:11.817Z [sysco_oms] info: false
+2020-12-27T06:49:11.820Z [sysco_oms] info: false
+2020-12-27T06:49:49.976Z [sysco_oms] info: false
+2020-12-27T06:49:50.054Z [sysco_oms] info: false
+2020-12-27T06:49:50.057Z [sysco_oms] info: false
+2020-12-27T06:49:50.062Z [sysco_oms] info: false
+2020-12-27T06:50:13.387Z [sysco_oms] info: false
+2020-12-27T06:50:13.469Z [sysco_oms] info: false
+2020-12-27T06:50:13.471Z [sysco_oms] info: false
+2020-12-27T06:50:13.476Z [sysco_oms] info: false
+2020-12-27T06:50:50.094Z [sysco_oms] info: false
+2020-12-27T06:50:50.179Z [sysco_oms] info: false
+2020-12-27T06:50:50.181Z [sysco_oms] info: false
+2020-12-27T06:50:50.186Z [sysco_oms] info: false
+2020-12-27T06:50:55.660Z [sysco_oms] info: false
+2020-12-27T06:50:55.742Z [sysco_oms] info: false
+2020-12-27T06:50:55.744Z [sysco_oms] info: false
+2020-12-27T06:50:55.749Z [sysco_oms] info: false
+2020-12-27T06:53:11.757Z [sysco_oms] info: false
+2020-12-27T06:53:11.838Z [sysco_oms] info: false
+2020-12-27T06:53:11.841Z [sysco_oms] info: false
+2020-12-27T06:53:11.846Z [sysco_oms] info: false
+2020-12-27T06:53:30.060Z [sysco_oms] info: false
+2020-12-27T06:53:30.155Z [sysco_oms] info: false
+2020-12-27T06:53:30.158Z [sysco_oms] info: false
+2020-12-27T06:53:30.162Z [sysco_oms] info: false
+2020-12-27T06:53:50.953Z [sysco_oms] info: false
+2020-12-27T06:53:51.035Z [sysco_oms] info: false
+2020-12-27T06:53:51.037Z [sysco_oms] info: false
+2020-12-27T06:53:51.043Z [sysco_oms] info: false
+2020-12-27T06:54:05.957Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T06:54:05.959Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T06:54:31.039Z [sysco_oms] info: false
+2020-12-27T06:54:31.118Z [sysco_oms] info: false
+2020-12-27T06:54:31.120Z [sysco_oms] info: false
+2020-12-27T06:54:31.125Z [sysco_oms] info: false
+2020-12-27T07:22:09.340Z [sysco_oms] info: false
+2020-12-27T07:22:09.423Z [sysco_oms] info: false
+2020-12-27T07:22:09.426Z [sysco_oms] info: false
+2020-12-27T07:22:09.428Z [sysco_oms] info: false
+2020-12-27T07:24:52.197Z [sysco_oms] info: false
+2020-12-27T07:24:52.280Z [sysco_oms] info: false
+2020-12-27T07:24:52.283Z [sysco_oms] info: false
+2020-12-27T07:24:52.288Z [sysco_oms] info: false
+2020-12-27T07:27:03.002Z [sysco_oms] info: false
+2020-12-27T07:27:03.082Z [sysco_oms] info: false
+2020-12-27T07:27:03.085Z [sysco_oms] info: false
+2020-12-27T07:27:03.087Z [sysco_oms] info: false
+2020-12-27T07:27:18.385Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T07:27:18.388Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T07:28:22.542Z [sysco_oms] info: false
+2020-12-27T07:28:22.620Z [sysco_oms] info: false
+2020-12-27T07:28:22.622Z [sysco_oms] info: false
+2020-12-27T07:28:22.628Z [sysco_oms] info: false
+2020-12-27T07:28:33.174Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T07:28:33.176Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T07:35:56.632Z [sysco_oms] info: false
+2020-12-27T07:35:56.709Z [sysco_oms] info: false
+2020-12-27T07:35:56.712Z [sysco_oms] info: false
+2020-12-27T07:35:56.717Z [sysco_oms] info: false
+2020-12-27T07:35:59.778Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-27T07:35:59.780Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-27T07:36:12.017Z [sysco_oms] info: false
+2020-12-27T07:36:12.105Z [sysco_oms] info: false
+2020-12-27T07:36:12.108Z [sysco_oms] info: false
+2020-12-27T07:36:12.113Z [sysco_oms] info: false

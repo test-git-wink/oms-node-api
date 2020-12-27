@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/20</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,67 +91,67 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { addDays, format } from "date-fns";
 &nbsp;
-const DELIVERY_DATE_FORMAT = <span class="cstat-no" title="statement not covered" >"yyyy-MM-dd";</span>
+const DELIVERY_DATE_FORMAT = "yyyy-MM-dd";
 &nbsp;
-export const getDeliveryDate = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return format(addDays(new Date(), 7), DELIVERY_DATE_FORMAT);</span>
+export const getDeliveryDate = () =&gt; {
+  return format(addDays(new Date(), 7), DELIVERY_DATE_FORMAT);
 };
 &nbsp;
-export const getInvoiceId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return Math.random().toString().slice(2, 9);</span>
+export const getInvoiceId = () =&gt; {
+  return Math.random().toString().slice(2, 9);
 };
 &nbsp;
-export const getOrderTimeStamp = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return format(new Date(), "yyyy-MM-dd HH:mm:ss");</span>
+export const getOrderTimeStamp = () =&gt; {
+  return format(new Date(), "yyyy-MM-dd HH:mm:ss");
 };
 &nbsp;
-export const getDeliveryAddres = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span></span>
+export const getDeliveryAddres = (
   streetNumber,
   street,
   city,
   state,
   country
 ) =&gt; {
-  let address = <span class="cstat-no" title="statement not covered" >"";</span>
-<span class="cstat-no" title="statement not covered" >  if (streetNumber != "") <span class="cstat-no" title="statement not covered" >address += streetNumber;</span></span>
-<span class="cstat-no" title="statement not covered" >  if (street != "") <span class="cstat-no" title="statement not covered" >address += " , " + street;</span></span>
-<span class="cstat-no" title="statement not covered" >  if (city != "") <span class="cstat-no" title="statement not covered" >address += " , " + city;</span></span>
-<span class="cstat-no" title="statement not covered" >  if (state != "") <span class="cstat-no" title="statement not covered" >address += " , " + state;</span></span>
-<span class="cstat-no" title="statement not covered" >  if (country != "") <span class="cstat-no" title="statement not covered" >address += " , " + country;</span></span>
+  let address = "";
+  if (streetNumber != "") address += streetNumber;
+  if (street != "") address += " , " + street;
+  if (city != "") address += " , " + city;
+  if (state != "") address += " , " + state;
+  if (country != "") address += " , " + country;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return address;</span>
+  return address;
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -160,7 +160,7 @@ export const getDeliveryAddres = <span class="cstat-no" title="statement not cov
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Dec 24 2020 19:15:57 GMT+0530 (India Standard Time)
+                at Sun Dec 27 2020 13:06:00 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

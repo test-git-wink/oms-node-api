@@ -80,7 +80,8 @@ export async function insertOrderDao2(
   orderStatus,
   userId,
   deliveryId,
-  invoiceId
+  invoiceId,
+  transaction
 ) {
   let order = await Order.create(
     {
@@ -92,7 +93,7 @@ export async function insertOrderDao2(
       invoiceId: invoiceId,
     },
 
-    { isNewRecord: true }
+    { isNewRecord: true, transaction: transaction }
   );
   return order.orderId;
 }

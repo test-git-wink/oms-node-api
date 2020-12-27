@@ -1,29 +1,31 @@
-import { getFromToDateRange } from "../util/dateConversion";
-import { getOffset } from "../util/commonUtil";
+import { Transaction } from "sequelize";
+import logger from "../config/logger";
+import { sequelize } from "../config/sequalizeDBConnect";
+import { OrderStatusConst } from "../constants/orderStatus";
+import { insertDeliveryDao } from "../dao/deliveryDao";
 import {
+  insertOrderDao2,
   orderDataDao,
   orderStatusByIdDao,
   updateOrderStatusDao,
-  insertOrderDao2,
 } from "../dao/orderDao";
-import logger from "../config/logger";
-import {
-  isValidOrderRequest,
-  getValidOrderItemList,
-} from "../validation/orderValidation";
-import { orderStatusConst, CANCEL_ORDER } from "../constants/orderStatus";
+import { bulkInsertOrderItemDao } from "../dao/orderItemDao";
 import {
   findProductPriceByIdDao,
   updateProductQuantityByIdDao,
 } from "../dao/productDao";
-import { insertDeliveryDao } from "../dao/deliveryDao";
+import { getOffset } from "../util/commonUtil";
+import { getFromToDateRange } from "../util/dateConversion";
 import {
+  getDeliveryAddres,
   getDeliveryDate,
   getInvoiceId,
   getOrderTimeStamp,
-  getDeliveryAddres,
 } from "../util/orderUtil";
-import { bulkInsertOrderItemDao } from "../dao/orderItemDao";
+import {
+  getValidOrderItemList,
+  isValidOrderRequest,
+} from "../validation/orderValidation";
 
 class OrderService {
   async getOrders(fromDate, toDate, page, pageLimit) {
@@ -68,16 +70,15 @@ class OrderService {
       if (
         isValidOrderRequest(orderStatusRequest) &&
         orderStatus != undefined &&
-        orderStatus != orderStatusConst.FAIL &&
-        orderStatus != orderStatusConst.CANCEL
+        orderStatus != OrderStatusConst.CANCEL &&
+        orderStatus != OrderStatusConst.FAIL
       ) {
         let orderUpdateCount = await updateOrderStatusDao(
-          orderStatusConst.CANCEL,
+          OrderStatusConst.CANCEL,
           orderId
         );
-        console.log(orderUpdateCount);
         logger.info(
-          "%s error OrderController cancelOrder orderUpdateCount: { %j }",
+          "%s error OrderController cancelOrder orderUpdateCount: { %s }",
           orderUpdateCount
         );
         return orderUpdateCount;
@@ -85,60 +86,76 @@ class OrderService {
         return 0;
       }
     } catch (error) {
-      logger.error("%s error OrderController cancelOrder %j", error);
+      logger.error("%s error OrderController cancelOrder %s", error);
       return 0;
     }
   }
 
   async placeOrder(orderRequest) {
-    let orderTotalPrice = 0;
-    let orderItemsPersist = [];
+    try {
+      let orderTotalPrice = 0;
+      let orderItemsPersist = [];
 
-    let getOrderingProducts = await getValidOrderItemList(
-      orderRequest.orderItemList
-    );
-
-    for (const item of getOrderingProducts) {
-      let productPrice =
-        (await findProductPriceByIdDao(item.productId)) * item.quantity;
-      orderTotalPrice += productPrice;
-      orderItemsPersist.push({
-        quantity: item.quantity,
-        orderProductTotalPrice: orderTotalPrice,
-        productId: item.productId,
-        orderId: -1,
+      const transaction = await sequelize.transaction({
+        isolationLevel: Transaction.ISOLATION_LEVELS.READ_COMMITTED,
       });
-    }
 
-    let deliveryId = await insertDeliveryDao(
-      getDeliveryDate(),
-      orderRequest.userAddresID,
-      "pending"
-    );
-
-    let orderId = await insertOrderDao2(
-      orderTotalPrice,
-      getOrderTimeStamp(),
-      "placed",
-      orderRequest.userId,
-      deliveryId,
-      getInvoiceId()
-    );
-
-    for (const orderItem of orderItemsPersist) {
-      orderItem.orderId = orderId;
-    }
-
-    await bulkInsertOrderItemDao(orderItemsPersist);
-
-    for (const orderitem of getOrderingProducts) {
-      await updateProductQuantityByIdDao(
-        orderitem.productId,
-        orderitem.quantity
+      let getOrderingProducts = await getValidOrderItemList(
+        orderRequest.orderItemList,
+        transaction
       );
-    }
 
-    return orderId;
+      for (const item of getOrderingProducts) {
+        let productPrice =
+          (await findProductPriceByIdDao(item.productId, transaction)) *
+          item.quantity;
+        orderTotalPrice += productPrice;
+        orderItemsPersist.push({
+          quantity: item.quantity,
+          orderProductTotalPrice: orderTotalPrice,
+          productId: item.productId,
+          orderId: -1,
+        });
+      }
+
+      for (const orderitem of getOrderingProducts) {
+        await updateProductQuantityByIdDao(
+          orderitem.productId,
+          orderitem.quantity,
+          transaction
+        );
+      }
+
+      let deliveryId = await insertDeliveryDao(
+        getDeliveryDate(),
+        orderRequest.userAddresID,
+        "pending",
+        transaction
+      );
+
+      let orderId = await insertOrderDao2(
+        orderTotalPrice,
+        getOrderTimeStamp(),
+        "placed",
+        orderRequest.userId,
+        deliveryId,
+        getInvoiceId(),
+        transaction
+      );
+
+      for (const orderItem of orderItemsPersist) {
+        orderItem.orderId = orderId;
+      }
+
+      await bulkInsertOrderItemDao(orderItemsPersist, transaction);
+
+      await transaction.commit();
+
+      return orderId;
+    } catch (error) {
+      await transaction.rollback();
+      throw error;
+    }
   }
 }
 

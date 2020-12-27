@@ -22,3 +22,9 @@ findProductByIdDao.mockImplementation((id) => {
   else if (id === "PROD_11223") return Promise.resolve(prod1);
   else return Promise.resolve(null);
 });
+
+export const findProductPriceByIdDao = jest.fn();
+findProductPriceByIdDao.mockResolvedValue(100);
+
+export const updateProductQuantityByIdDao = jest.fn();
+updateProductQuantityByIdDao.mockResolvedValue(1);

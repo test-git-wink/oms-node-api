@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">25% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -88,30 +88,30 @@
 <a name='L29'></a><a href='#L29'>29</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { isBefore, isEqual } from "date-fns";
 import moment from "moment";
@@ -119,23 +119,23 @@ import moment from "moment";
 const INVALID_DATE = "Invalid date";
 const DATE_FORMAT = "YYYY-MM-DD";
 &nbsp;
-export const isValidDate = <span class="fstat-no" title="function not covered" >(d</span>ateToValidate) =&gt; {
-<span class="cstat-no" title="statement not covered" >  if (moment(dateToValidate, DATE_FORMAT, true).format() === INVALID_DATE)</span>
-<span class="cstat-no" title="statement not covered" >    return false;</span>
-  else <span class="cstat-no" title="statement not covered" >return true;</span>
+export const isValidDate = (dateToValidate) =&gt; {
+  if (moment(dateToValidate, DATE_FORMAT, true).format() === INVALID_DATE)
+    return false;
+  else return true;
 };
 &nbsp;
-export const isValidNumber = <span class="fstat-no" title="function not covered" >(s</span>tr) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return /^\+?(0|[1-9]\d*)$/.test(str);</span>
+export const isValidNumber = (str) =&gt; {
+  return /^\+?(0|[1-9]\d*)$/.test(str);
 };
 &nbsp;
-export const isVallidDateRange = <span class="fstat-no" title="function not covered" >(f</span>romDate, toDate) =&gt; {
-<span class="cstat-no" title="statement not covered" >  if (isValidDate(fromDate) &amp;&amp; isValidDate(toDate)) {</span>
-    let fromParsed = <span class="cstat-no" title="statement not covered" >new Date(fromDate);</span>
-    let toParsed = <span class="cstat-no" title="statement not covered" >new Date(toDate);</span>
-<span class="cstat-no" title="statement not covered" >    return isBefore(fromParsed, toParsed) || isEqual(toParsed, fromParsed);</span>
+export const isVallidDateRange = (fromDate, toDate) =&gt; {
+  if (isValidDate(fromDate) &amp;&amp; isValidDate(toDate)) {
+    let fromParsed = new Date(fromDate);
+    let toParsed = new Date(toDate);
+    return isBefore(fromParsed, toParsed) || isEqual(toParsed, fromParsed);
   }
-<span class="cstat-no" title="statement not covered" >  return false;</span>
+  return false;
 };
 &nbsp;
 export function isEmpty(obj) {
@@ -148,7 +148,7 @@ export function isEmpty(obj) {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Dec 24 2020 19:15:57 GMT+0530 (India Standard Time)
+                at Sun Dec 27 2020 13:06:00 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>

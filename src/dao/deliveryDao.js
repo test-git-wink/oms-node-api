@@ -4,7 +4,8 @@ import { getDeliveryDate } from "../util/orderUtil";
 export async function insertDeliveryDao(
   deliveryDate,
   userAddressId,
-  deliveryStatus
+  deliveryStatus,
+  transaction
 ) {
   let delivery = await Delivery.create(
     {
@@ -13,7 +14,7 @@ export async function insertDeliveryDao(
       deliveryStatus: deliveryStatus,
     },
 
-    { isNewRecord: true }
+    { isNewRecord: true, transaction: transaction }
   );
   return delivery.deliveryId;
 }
