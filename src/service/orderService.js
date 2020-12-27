@@ -97,7 +97,7 @@ class OrderService {
       let orderItemsPersist = [];
 
       const transaction = await sequelize.transaction({
-        isolationLevel: Transaction.ISOLATION_LEVELS.READ_COMMITTED,
+        isolationLevel: Transaction.ISOLATION_LEVELS.REPEATABLE_READ,
       });
 
       let getOrderingProducts = await getValidOrderItemList(

@@ -1,10 +1,9 @@
 import {
+  isEmpty,
   isValidDate,
   isValidNumber,
   isVallidDateRange,
-  isEmpty,
 } from "../commonValidation";
-import moment from "moment";
 
 describe("isValidDate check", () => {
   test("shoud return true for 2020-12-21", () => {

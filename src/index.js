@@ -15,3 +15,5 @@ app.use("/v1/customer-orders/order", orderRoute);
 app.listen(8082, () => {
   console.log("app listening");
 });
+
+export default app;
