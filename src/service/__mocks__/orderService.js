@@ -10,8 +10,16 @@ getOrders.mockImplementation((fromDate, toDate, page, limit) => {
   else return Promise.resolve([]);
 });
 
+export const cancelOrder = jest.fn();
+cancelOrder.mockImplementation((orderId, updateReq) => {
+  if (orderId == 11) return Promise.reject(0);
+  else if (orderId == 1) return Promise.resolve(1);
+  else if (orderId == 101) return Promise.reject(0);
+  else return Promise.resolve(1);
+});
+
 const OrderService = jest.fn().mockImplementation(() => {
-  return { getOrders: getOrders };
+  return { getOrders: getOrders, cancelOrder: cancelOrder };
 });
 
 export default OrderService;

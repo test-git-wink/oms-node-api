@@ -22,6 +22,7 @@ describe("isValidDate check", () => {
 describe("isValidNumber check", () => {
   test("shoud return true for 2020", () => {
     expect(isValidNumber("2020")).toBeTruthy();
+    // expect(isValidNumber(1)).toBeTruthy();
   });
 
   test("shoud return false for abs", () => {

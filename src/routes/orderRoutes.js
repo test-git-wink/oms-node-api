@@ -71,7 +71,7 @@ class OrderController {
         isValidNumber(orderId) &&
         isValidOrderId(orderId)
       ) {
-        orderService.cancelOrder(orderId, req.body);
+        await orderService.cancelOrder(orderId, req.body);
         return res.status(204).json({ message: responseMsgs.SUCCESS });
       } else {
         logger.error(

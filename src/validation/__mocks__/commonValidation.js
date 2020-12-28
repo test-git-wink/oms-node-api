@@ -8,7 +8,11 @@ isVallidDateRange.mockImplementation((from, to) => {
 export const isValidNumber = jest.fn();
 isValidNumber.mockImplementation((num) => {
   if (num == "10") return true;
+  if (num == 1) return true;
+  if (num == "10") return true;
+  if (num == "11") return true;
   if (num == "1000000000000000000000") return true;
+  if (num == "101") return true;
   else if (num == "abc") return false;
   else return false;
 });

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">47.06% </span>
+                <span class="strong">76.47% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/34</span>
+                <span class='fraction'>26/34</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">41.67% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/12</span>
+                <span class='fraction'>10/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">33.33% </span>
+                <span class="strong">66.67% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/3</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">47.06% </span>
+                <span class="strong">76.47% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>16/34</span>
+                <span class='fraction'>26/34</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -252,38 +252,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -387,39 +387,39 @@ class OrderController {
     }
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  as</span>ync updateOrderRoute(req, res, next) {
-<span class="cstat-no" title="statement not covered" >    try {</span>
-      const orderId = <span class="cstat-no" title="statement not covered" >req.params.orderId;</span>
+  async updateOrderRoute(req, res, next) {
+    try {
+      const orderId = req.params.orderId;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      logger.info(</span>
+      logger.info(
         "OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %j}",
         orderId,
         req.body
       );
 &nbsp;
-<span class="cstat-no" title="statement not covered" >      if (</span>
+      if (
         orderId != undefined &amp;&amp;
         isValidNumber(orderId) &amp;&amp;
         isValidOrderId(orderId)
       ) {
-<span class="cstat-no" title="statement not covered" >        orderService.cancelOrder(orderId, req.body);</span>
-<span class="cstat-no" title="statement not covered" >        return res.status(204).json({ message: responseMsgs.SUCCESS });</span>
+        await orderService.cancelOrder(orderId, req.body);
+        return res.status(204).json({ message: responseMsgs.SUCCESS });
       } else {
-<span class="cstat-no" title="statement not covered" >        logger.error(</span>
+        logger.error(
           "%s OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %j}",
           responseMsgs.INVALID_INPUTS,
           orderId,
           req.body
         );
-<span class="cstat-no" title="statement not covered" >        return res.status(400).json({ message: responseMsgs.INVALID_INPUTS });</span>
+        return res.status(400).json({ message: responseMsgs.INVALID_INPUTS });
       }
     } catch (error) {
-<span class="cstat-no" title="statement not covered" >      logger.error(</span>
+      logger.error(
         "%s error OrderController updateOrderRoute param: { %s }",
         responseMsgs.SERVER_ERROR,
         error
       );
-<span class="cstat-no" title="statement not covered" >      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });</span>
+      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 &nbsp;
@@ -472,7 +472,7 @@ export default orderRoutes;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Dec 27 2020 20:48:46 GMT+0530 (India Standard Time)
+                at Mon Dec 28 2020 12:16:53 GMT+0530 (India Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
