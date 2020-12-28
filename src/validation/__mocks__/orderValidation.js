@@ -22,3 +22,9 @@ isValidOrderId.mockImplementation((x) => {
   if (x == 10) return false;
   if (x == 101) return true;
 });
+
+export const isValidPostOrderRequest = jest.fn();
+isValidPostOrderRequest
+  .mockReturnValueOnce(true)
+  .mockReturnValueOnce(false)
+  .mockReturnValueOnce(true);

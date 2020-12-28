@@ -18,8 +18,18 @@ cancelOrder.mockImplementation((orderId, updateReq) => {
   else return Promise.resolve(1);
 });
 
+export const placeOrder = jest.fn();
+placeOrder
+  .mockResolvedValueOnce(56)
+  .mockRejectedValueOnce(57)
+  .mockRejectedValueOnce(0);
+
 const OrderService = jest.fn().mockImplementation(() => {
-  return { getOrders: getOrders, cancelOrder: cancelOrder };
+  return {
+    getOrders: getOrders,
+    cancelOrder: cancelOrder,
+    placeOrder: placeOrder,
+  };
 });
 
 export default OrderService;

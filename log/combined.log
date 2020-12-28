@@ -1984,3 +1984,116 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 2020-12-28T06:46:52.811Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
 2020-12-28T06:46:52.815Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 101 , orderStatus : {"orderStatus":"cancel"}}
 2020-12-28T06:46:52.815Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2020-12-28T07:04:42.133Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:04:42.152Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:04:42.152Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:04:42.156Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=1000000000000000000000,limit=10}
+2020-12-28T07:04:42.157Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute []
+2020-12-28T07:04:42.170Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 1 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:04:42.173Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:04:42.173Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:04:42.176Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 101 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:04:42.176Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2020-12-28T07:04:42.180Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:04:42.272Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-28T07:04:42.274Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-28T07:19:58.670Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:19:58.689Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:19:58.690Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:19:58.693Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=1000000000000000000000,limit=10}
+2020-12-28T07:19:58.694Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute []
+2020-12-28T07:19:58.707Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 1 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:19:58.710Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:19:58.711Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:19:58.713Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 101 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:19:58.714Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2020-12-28T07:19:58.718Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:19:58.721Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:19:58.819Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-28T07:19:58.821Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-28T07:51:50.302Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:51:50.321Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:51:50.321Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T07:51:50.324Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=1000000000000000000000,limit=10}
+2020-12-28T07:51:50.326Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute []
+2020-12-28T07:51:50.337Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 1 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:51:50.341Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:51:50.341Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:51:50.344Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 101 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T07:51:50.345Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2020-12-28T07:51:50.349Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:51:50.352Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:51:50.354Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T07:51:50.354Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 57 }
+2020-12-28T07:51:50.424Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-28T07:51:50.432Z [sysco_oms] error: undefined error OrderController cancelOrder %s
+2020-12-28T08:19:29.196Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T08:19:29.214Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T08:19:29.214Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { fromDate=abs,toDate=2020-12-31,page=10,limit=10}
+2020-12-28T08:19:29.218Z [sysco_oms] info: OrderController getOrderRoute param: { fromDate=2020-12-01,toDate=2020-12-31,page=1000000000000000000000,limit=10}
+2020-12-28T08:19:29.219Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute []
+2020-12-28T08:19:29.233Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 1 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T08:19:29.236Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T08:19:29.236Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T08:19:29.239Z [sysco_oms] info: OrderController updateOrderRoute() param: { orderId: 101 , orderStatus : {"orderStatus":"cancel"}}
+2020-12-28T08:19:29.239Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2020-12-28T08:19:29.244Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T08:19:29.248Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T08:19:29.251Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2020-12-28T08:19:29.251Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 57 }
+2020-12-28T08:19:29.426Z [sysco_oms] info: 1 error OrderController cancelOrder orderUpdateCount: { %s }
+2020-12-28T08:19:29.428Z [sysco_oms] error: undefined error OrderController cancelOrder %s
