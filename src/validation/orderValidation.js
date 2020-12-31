@@ -1,8 +1,7 @@
-import logger from "../config/logger";
 import { OrderRequestStatus, OrderStatusConst } from "../constants/orderStatus";
 import { countByOrderIdDao } from "../dao/orderDao";
-import { countByUserAddressIdDao } from "../dao/userAddressDao";
 import { findProductByIdDao } from "../dao/productDao";
+import { countByUserAddressIdDao } from "../dao/userAddressDao";
 import { isEmpty, isValidNumber } from "../validation/commonValidation";
 
 export async function isValidOrderId(orderId) {
@@ -68,4 +67,8 @@ export async function isValidPostOrderRequest(orderRequest) {
   );
 
   return validUserAddress && validOrderItems > 0 && validOrderRequestStatus;
+}
+
+export function isValidOrderUpdateRequest(orderId) {
+  return orderId && isValidNumber(orderId) && isValidOrderId(orderId);
 }

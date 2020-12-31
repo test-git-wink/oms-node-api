@@ -28,65 +28,40 @@ import {
 } from "../validation/orderValidation";
 
 class OrderService {
-  async getOrders(fromDate, toDate, page, pageLimit) {
-    let dates = getFromToDateRange(fromDate, toDate);
-    let offset = getOffset(page);
-    let limit = parseInt(pageLimit);
+  async getOrders(request) {
+    const { fromDate, toDate, page, limit } = request;
+    const dates = getFromToDateRange(fromDate, toDate);
+    const pageLimit = parseInt(limit);
+    const pageOffset = getOffset(page, pageLimit);
 
-    let result = await orderDataDao(
+    const result = await orderDataDao(
       dates["fromDate"],
       dates["toDate"],
-      limit,
-      offset
+      pageLimit,
+      pageOffset
     );
 
-    let orders = [];
-
-    result.forEach((order) => {
-      orders.push({
-        orderId: order.order_id,
-        customerId: order.user_id,
-        orderTotalPrice: order.order_total_price,
-        orderTimestamp: order.order_timestamp,
-        orderStatus: order.order_status,
-        deliveryDate: order.delivery_date,
-        deliveryStatus: order.delivery_status,
-        deliveryAddress: getDeliveryAddres(
-          order.street_number,
-          order.street,
-          order.city,
-          order.state,
-          order.country
-        ),
-      });
-    });
-
-    return orders;
+    return result;
   }
 
   async cancelOrder(orderId, orderStatusRequest) {
-    try {
-      let orderStatus = await orderStatusByIdDao(orderId);
-      if (
-        isValidOrderRequest(orderStatusRequest) &&
-        orderStatus != undefined &&
-        orderStatus != OrderStatusConst.CANCEL &&
-        orderStatus != OrderStatusConst.FAIL
-      ) {
-        let orderUpdateCount = await updateOrderStatusDao(
-          OrderStatusConst.CANCEL,
-          orderId
-        );
-        logger.info(
-          "%s error OrderController cancelOrder orderUpdateCount: { %s }",
-          orderUpdateCount
-        );
-        return orderUpdateCount;
-      } else {
-        return 0;
-      }
-    } catch (error) {
-      logger.error("%s error OrderController cancelOrder %s", error);
+    let orderStatus = await orderStatusByIdDao(orderId);
+    if (
+      isValidOrderRequest(orderStatusRequest) &&
+      orderStatus &&
+      orderStatus != OrderStatusConst.CANCEL &&
+      orderStatus != OrderStatusConst.FAIL
+    ) {
+      let orderUpdateCount = await updateOrderStatusDao(
+        OrderStatusConst.CANCEL,
+        orderId
+      );
+      logger.info(
+        "%s OrderController cancelOrder orderUpdateCount: { %s }",
+        orderUpdateCount
+      );
+      return orderUpdateCount;
+    } else {
       return 0;
     }
   }
@@ -105,10 +80,14 @@ class OrderService {
         transaction
       );
 
+      const promisList = [];
       for (const item of getOrderingProducts) {
-        let productPrice =
-          (await findProductPriceByIdDao(item.productId, transaction)) *
-          item.quantity;
+        promisList.push(findProductPriceByIdDao(item.productId, transaction));
+      }
+      const productPrices = await Promise.all(promisList);
+
+      getOrderingProducts.forEach((item, index) => {
+        const productPrice = productPrices[index] * item.quantity;
         orderTotalPrice += productPrice;
         orderItemsPersist.push({
           quantity: item.quantity,
@@ -116,15 +95,17 @@ class OrderService {
           productId: item.productId,
           orderId: -1,
         });
-      }
+      });
 
-      for (const orderitem of getOrderingProducts) {
-        await updateProductQuantityByIdDao(
-          orderitem.productId,
-          orderitem.quantity,
-          transaction
-        );
-      }
+      await Promise.all(
+        getOrderingProducts.map((orderitem, ind) => {
+          updateProductQuantityByIdDao(
+            orderitem.productId,
+            orderitem.quantity,
+            transaction
+          );
+        })
+      );
 
       let deliveryId = await insertDeliveryDao(
         getDeliveryDate(),

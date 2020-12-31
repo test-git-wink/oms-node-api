@@ -1,10 +1,10 @@
 export const getOrders = jest.fn();
-getOrders.mockImplementation((fromDate, toDate, page, limit) => {
+getOrders.mockImplementation((req) => {
   if (
-    fromDate == "2020-12-01" &&
-    toDate == "2020-12-31" &&
-    page == "1000000000000000000000" &&
-    limit == "10"
+    req.fromDate == "2020-12-01" &&
+    req.toDate == "2020-12-31" &&
+    req.page == "1000000000000000000000" &&
+    req.limit == "10"
   )
     return Promise.reject([]);
   else return Promise.resolve([]);

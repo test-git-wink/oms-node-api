@@ -1,5 +1,4 @@
-import winston from "winston";
-import { createLogger, format, transports } from "winston";
+import winston, { createLogger, format } from "winston";
 const { combine, timestamp, label, printf } = format;
 
 const logFormat = printf(({ level, message, label, timestamp }) => {

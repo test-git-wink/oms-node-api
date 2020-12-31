@@ -1,7 +1,7 @@
 import mysqlPool from "../config/databaseConfig";
 import Order from "../model/order";
 
-const ORDER_DATA_QUERY = `SELECT o.order_id,o.order_total_price,o.order_timestamp,o.order_status,o.user_id,d.delivery_date,d.delivery_status,ua.street_number,ua.street,ua.city,ua.state,ua.country
+const ORDER_DATA_QUERY = `SELECT o.order_id as id,o.order_total_price as orderTotalPrice,o.order_timestamp as orderTimestamp,o.order_status as orderStatus,o.user_id as customerId,d.delivery_date as deliveryDate,d.delivery_status as deliveryStatus,CONCAT(ua.street_number,' , ',ua.street,' , ',ua.city,' , ',ua.state,' , ',ua.country) as deliveryAddress
  FROM orders o, delivery d ,user_address ua where o.delivery_id=d.delivery_id and d.user_address_id=ua.user_address_id and o.order_timestamp> ? and o.order_timestamp < ? limit ? offset ?`;
 
 const UPDATE_ORDER_STATUS = `Update orders  set ? where ?`;

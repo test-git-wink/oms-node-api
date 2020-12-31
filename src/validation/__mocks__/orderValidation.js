@@ -28,3 +28,9 @@ isValidPostOrderRequest
   .mockReturnValueOnce(true)
   .mockReturnValueOnce(false)
   .mockReturnValueOnce(true);
+
+export const isValidOrderUpdateRequest = jest.fn();
+isValidOrderUpdateRequest
+  .mockReturnValueOnce(true)
+  .mockReturnValueOnce(false)
+  .mockReturnValueOnce(true);

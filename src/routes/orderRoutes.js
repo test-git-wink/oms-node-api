@@ -1,48 +1,29 @@
 import { Router } from "express";
-import OrderService from "../service/orderService";
 import logger from "../config/logger";
+import { OrderStatusConst } from "../constants/orderStatus";
+import { responseMsgs } from "../constants/responseMsgsConst";
+import OrderService from "../service/orderService";
 import {
+  isValidGetOrderRequest,
   isValidNumber,
-  isVallidDateRange,
 } from "../validation/commonValidation";
 import {
   isValidOrderId,
   isValidPostOrderRequest,
+  isValidOrderUpdateRequest,
 } from "../validation/orderValidation";
-import { responseMsgs } from "../constants/responseMsgsConst";
-import { OrderStatusConst } from "../constants/orderStatus";
 
 class OrderController {
   async getOrderRoute(req, res, next) {
     try {
-      const { fromDate, toDate, page, limit } = req.query;
-      logger.info(
-        "OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}",
-        fromDate,
-        toDate,
-        page,
-        limit
-      );
-      if (
-        isVallidDateRange(fromDate, toDate) &&
-        isValidNumber(page) &&
-        isValidNumber(limit)
-      ) {
-        let result = await orderService.getOrders(
-          fromDate,
-          toDate,
-          page,
-          limit
-        );
+      if (isValidGetOrderRequest(req.query)) {
+        const result = await orderService.getOrders(req.query);
         return res.status(200).json({ orders: result });
       } else {
         logger.error(
-          `%s OrderController getOrderRoute param: { fromDate=%s,toDate=%s,page=%s,limit=%s}`,
+          `%s OrderController getOrderRoute param: { %s}`,
           responseMsgs.INVALID_INPUTS,
-          fromDate,
-          toDate,
-          page,
-          limit
+          req.query
         );
         return res.status(400).json({ message: responseMsgs.INVALID_INPUTS });
       }
@@ -60,17 +41,7 @@ class OrderController {
     try {
       const orderId = req.params.orderId;
 
-      logger.info(
-        "OrderController updateOrderRoute() param: { orderId: %s , orderStatus : %j}",
-        orderId,
-        req.body
-      );
-
-      if (
-        orderId != undefined &&
-        isValidNumber(orderId) &&
-        isValidOrderId(orderId)
-      ) {
+      if (isValidOrderUpdateRequest(orderId)) {
         await orderService.cancelOrder(orderId, req.body);
         return res.status(204).json({ message: responseMsgs.SUCCESS });
       } else {

@@ -27,12 +27,13 @@ describe("OrderService.getOrders check", () => {
   test("should return empty list for fromDate=2020-12-01,toDate=2020-12-31,page=0,limit=10", async () => {
     expect.assertions(1);
     const orderService = new OrderService();
-    let data = await orderService.getOrders(
-      "2020-12-01",
-      "2020-12-31",
-      "0",
-      "10"
-    );
+    let req = {
+      fromDate: "2020-12-01",
+      toDate: "2020-12-31",
+      page: "0",
+      limit: "10",
+    };
+    let data = await orderService.getOrders(req);
     expect(data).toEqual([]);
   });
 });

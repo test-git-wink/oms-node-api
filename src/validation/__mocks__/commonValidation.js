@@ -24,3 +24,9 @@ isValidDate.mockImplementation((date) => {
   else if (date == "2020-10-31") return true;
   else return false;
 });
+
+export const isValidGetOrderRequest = jest.fn();
+isValidGetOrderRequest
+  .mockReturnValueOnce(true)
+  .mockReturnValueOnce(false)
+  .mockReturnValueOnce(true);

@@ -1,13 +1,12 @@
 import { isBefore, isEqual } from "date-fns";
 import moment from "moment";
+import { validateGetOrders } from "../dto/getOrderRequest";
 
 const INVALID_DATE = "Invalid date";
 const DATE_FORMAT = "YYYY-MM-DD";
 
 export const isValidDate = (dateToValidate) => {
-  if (moment(dateToValidate, DATE_FORMAT, true).format() === INVALID_DATE)
-    return false;
-  else return true;
+  return moment(dateToValidate, DATE_FORMAT, true).format() != INVALID_DATE;
 };
 
 export const isValidNumber = (str) => {
@@ -25,4 +24,11 @@ export const isVallidDateRange = (fromDate, toDate) => {
 
 export function isEmpty(obj) {
   return Object.keys(obj).length === 0;
+}
+
+export function isValidGetOrderRequest(request) {
+  return (
+    validateGetOrders(request) &&
+    isVallidDateRange(request.fromDate, request.toDate)
+  );
 }
