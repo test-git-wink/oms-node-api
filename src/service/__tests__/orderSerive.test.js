@@ -65,15 +65,6 @@ describe("OrderService.cancelOrder check", () => {
     let data = await orderService.cancelOrder(orderId, updateReq);
     expect(data).toBe(0);
   });
-
-  test("should return 0 for valid order id but data acces exception", async () => {
-    expect.assertions(1);
-    let orderId = 12;
-    let updateReq = { orderStatus: "cancel" };
-    const orderService = new OrderService();
-    let data = await orderService.cancelOrder(orderId, updateReq);
-    expect(data).toBe(0);
-  });
 });
 
 describe("OrderService.placeOrder check", () => {

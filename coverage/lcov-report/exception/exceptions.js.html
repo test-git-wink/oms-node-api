@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for validation/commonValidation.js</title>
+    <title>Code coverage report for exception/exceptions.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">validation</a> commonValidation.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">exception</a> exceptions.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.86% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/14</span>
+                <span class='fraction'>4/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/8</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>1/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.86% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/14</span>
+                <span class='fraction'>4/10</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -91,32 +91,26 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -125,39 +119,60 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { isBefore, isEqual } from "date-fns";
-import moment from "moment";
-import { validateGetOrders } from "../dto/getOrderRequest";
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { th } from "date-fns/locale";
+import logger from "../config/logger";
+import { responseMsgs } from "../constants/responseMsgsConst";
 &nbsp;
-const INVALID_DATE = "Invalid date";
-const DATE_FORMAT = "YYYY-MM-DD";
-&nbsp;
-export const isValidDate = (dateToValidate) =&gt; {
-  return moment(dateToValidate, DATE_FORMAT, true).format() != INVALID_DATE;
-};
-&nbsp;
-export const isValidNumber = (str) =&gt; {
-  return /^\+?(0|[1-9]\d*)$/.test(str);
-};
-&nbsp;
-export const isVallidDateRange = (fromDate, toDate) =&gt; {
-  if (isValidDate(fromDate) &amp;&amp; isValidDate(toDate)) {
-    let fromParsed = new Date(fromDate);
-    let toParsed = new Date(toDate);
-    return isBefore(fromParsed, toParsed) || isEqual(toParsed, fromParsed);
+export class ServerError extends Error {
+  constructor(message) {
+    super();
+    this.message = message;
+    this.name = responseMsgs.SERVER_ERROR;
+    logger.error(
+      "name %s message %s stack %s",
+      this.name,
+      this.message,
+      this.stack
+    );
   }
-  return false;
-};
 &nbsp;
-export function isEmpty(obj) {
-  return Object.keys(obj).length === 0;
+<span class="fstat-no" title="function not covered" >  ge</span>tServerErrorResponse() {
+<span class="cstat-no" title="statement not covered" >    return { message: responseMsgs.SERVER_ERROR };</span>
+  }
 }
 &nbsp;
-export function <span class="fstat-no" title="function not covered" >isValidGetOrderRequest(</span>request) {
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    validateGetOrders(request) &amp;&amp;
-    isVallidDateRange(request.fromDate, request.toDate)
-  );
+export class RouteNotFoundError extends Error {
+<span class="fstat-no" title="function not covered" >  co</span>nstructor(message) {
+<span class="cstat-no" title="statement not covered" >    super();</span>
+<span class="cstat-no" title="statement not covered" >    this.message = message;</span>
+<span class="cstat-no" title="statement not covered" >    this.name = responseMsgs.ROUTE_NOT_FOUND;</span>
+<span class="cstat-no" title="statement not covered" >    logger.error(</span>
+      "name %s message %s stack %s",
+      this.name,
+      this.message,
+      this.stack
+    );
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  ge</span>tRouteNotFoundResponse() {
+<span class="cstat-no" title="statement not covered" >    return { message: responseMsgs.ROUTE_NOT_FOUND };</span>
+  }
 }
 &nbsp;</pre></td></tr></table></pre>
 

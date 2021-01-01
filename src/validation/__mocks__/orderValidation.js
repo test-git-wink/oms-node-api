@@ -34,3 +34,6 @@ isValidOrderUpdateRequest
   .mockReturnValueOnce(true)
   .mockReturnValueOnce(false)
   .mockReturnValueOnce(true);
+
+export const validOrderCancelRequest = jest.fn();
+validOrderCancelRequest.mockReturnValueOnce(true).mockReturnValueOnce(false);

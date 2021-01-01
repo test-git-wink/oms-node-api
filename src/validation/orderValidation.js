@@ -1,8 +1,9 @@
 import { OrderRequestStatus, OrderStatusConst } from "../constants/orderStatus";
-import { countByOrderIdDao } from "../dao/orderDao";
+import { countByOrderIdDao, orderStatusByIdDao } from "../dao/orderDao";
 import { findProductByIdDao } from "../dao/productDao";
 import { countByUserAddressIdDao } from "../dao/userAddressDao";
 import { isEmpty, isValidNumber } from "../validation/commonValidation";
+import { validatePostOrder } from "../dto/postOrderRequest";
 
 export async function isValidOrderId(orderId) {
   let count = await countByOrderIdDao(orderId);
@@ -62,13 +63,25 @@ export async function isValidPostOrderRequest(orderRequest) {
     await getValidOrderItemList(orderRequest.orderItemList)
   ).length;
 
-  const validOrderRequestStatus = isValidNewOrderStatus(
-    orderRequest.orderStatus
-  );
+  // const validOrderRequestStatus = isValidNewOrderStatus(
+  //   orderRequest.orderStatus
+  // );
 
-  return validUserAddress && validOrderItems > 0 && validOrderRequestStatus;
+  return (
+    validUserAddress && validOrderItems > 0 && validatePostOrder(orderRequest)
+  );
 }
 
 export function isValidOrderUpdateRequest(orderId) {
   return orderId && isValidNumber(orderId) && isValidOrderId(orderId);
+}
+
+export async function validOrderCancelRequest(orderId, orderStatusRequest) {
+  let orderStatus = await orderStatusByIdDao(orderId);
+  return (
+    isValidOrderRequest(orderStatusRequest) &&
+    orderStatus &&
+    orderStatus != OrderStatusConst.CANCEL &&
+    orderStatus != OrderStatusConst.FAIL
+  );
 }

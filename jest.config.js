@@ -10,6 +10,7 @@ module.exports = {
     "!src/config/*.js",
     "!src/model/*.js",
     "!src/dao/*.js",
+    "!src/dto/*.js",
     "!src/index.js",
     "!*.js",
     "!node_modules/**",

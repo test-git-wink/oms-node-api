@@ -7,6 +7,8 @@ import {
   isValidPostOrderRequest,
 } from "../orderValidation";
 
+import { validatePostOrder } from "../../dto/postOrderRequest";
+
 beforeAll(() => {
   jest.resetModules();
   jest.clearAllMocks();
@@ -240,5 +242,89 @@ describe("isValidPostOrderRequest check", () => {
 
     let data3 = await isValidPostOrderRequest(request3);
     expect(data3).toBeFalsy();
+  });
+
+  test("should return true for valid order request", async () => {
+    expect.assertions(1);
+    let request1 = {
+      userId: 1,
+      orderItemList: [
+        {
+          productId: "PROD_11223",
+          quantity: 30,
+        },
+        {
+          productId: "PROD_11224",
+          quantity: 30,
+        },
+      ],
+      orderStatus: "placed",
+      shipmentDate: "2020-12-31",
+      userAddresID: 1,
+    };
+    let data1 = validatePostOrder(request1);
+    expect(data1).toBeTruthy();
+  });
+});
+
+describe("validatePostOrder dto check", () => {
+  test("should return true for valid order request", () => {
+    let request1 = {
+      userId: 1,
+      orderItemList: [
+        {
+          productId: "PROD_11223",
+          quantity: 30,
+        },
+        {
+          productId: "PROD_11224",
+          quantity: 30,
+        },
+      ],
+      orderStatus: "placed",
+      shipmentDate: "2020-12-31",
+      userAddresID: 1,
+    };
+    expect(validatePostOrder(request1)).toBeTruthy();
+  });
+
+  test("should return false for invalid order request with invalid user id", () => {
+    let request1 = {
+      userId: "23d",
+      orderItemList: [
+        {
+          productId: "PROD_11223",
+          quantity: 30,
+        },
+        {
+          productId: "PROD_11224",
+          quantity: 30,
+        },
+      ],
+      orderStatus: "placed",
+      shipmentDate: "2020-12-31",
+      userAddresID: 1,
+    };
+    expect(validatePostOrder(request1)).toBeFalsy();
+  });
+
+  test("should return false for invalid order request with invalid order status", () => {
+    let request1 = {
+      userId: 1,
+      orderItemList: [
+        {
+          productId: "PROD_11223",
+          quantity: 30,
+        },
+        {
+          productId: "PROD_11224",
+          quantity: 30,
+        },
+      ],
+      orderStatus: "cancel",
+      shipmentDate: "2020-12-31",
+      userAddresID: 1,
+    };
+    expect(validatePostOrder(request1)).toBeFalsy();
   });
 });

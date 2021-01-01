@@ -25,6 +25,7 @@ import {
 import {
   getValidOrderItemList,
   isValidOrderRequest,
+  validOrderCancelRequest,
 } from "../validation/orderValidation";
 
 class OrderService {
@@ -45,13 +46,8 @@ class OrderService {
   }
 
   async cancelOrder(orderId, orderStatusRequest) {
-    let orderStatus = await orderStatusByIdDao(orderId);
-    if (
-      isValidOrderRequest(orderStatusRequest) &&
-      orderStatus &&
-      orderStatus != OrderStatusConst.CANCEL &&
-      orderStatus != OrderStatusConst.FAIL
-    ) {
+    let validOrder = await validOrderCancelRequest(orderId, orderStatusRequest);
+    if (validOrder) {
       let orderUpdateCount = await updateOrderStatusDao(
         OrderStatusConst.CANCEL,
         orderId

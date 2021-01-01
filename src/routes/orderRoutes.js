@@ -3,15 +3,12 @@ import logger from "../config/logger";
 import { OrderStatusConst } from "../constants/orderStatus";
 import { responseMsgs } from "../constants/responseMsgsConst";
 import OrderService from "../service/orderService";
+import { isValidGetOrderRequest } from "../validation/commonValidation";
 import {
-  isValidGetOrderRequest,
-  isValidNumber,
-} from "../validation/commonValidation";
-import {
-  isValidOrderId,
-  isValidPostOrderRequest,
   isValidOrderUpdateRequest,
+  isValidPostOrderRequest,
 } from "../validation/orderValidation";
+import { ServerError } from "../exception/exceptions";
 
 class OrderController {
   async getOrderRoute(req, res, next) {
@@ -33,7 +30,8 @@ class OrderController {
         responseMsgs.INVALID_INPUTS,
         error
       );
-      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
+      next(new ServerError(error));
+      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 
@@ -59,7 +57,8 @@ class OrderController {
         responseMsgs.SERVER_ERROR,
         error
       );
-      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
+      next(new ServerError(error));
+      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 
@@ -89,7 +88,8 @@ class OrderController {
         responseMsgs.SERVER_ERROR,
         error
       );
-      return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
+      next(new ServerError(error));
+      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 }
