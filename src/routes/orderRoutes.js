@@ -31,7 +31,6 @@ class OrderController {
         error
       );
       next(new ServerError(error));
-      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 
@@ -58,7 +57,6 @@ class OrderController {
         error
       );
       next(new ServerError(error));
-      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 
@@ -89,7 +87,6 @@ class OrderController {
         error
       );
       next(new ServerError(error));
-      // return res.status(500).json({ message: responseMsgs.SERVER_ERROR });
     }
   }
 }
