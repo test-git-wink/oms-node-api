@@ -6,6 +6,8 @@ import { QueryTypes } from "sequelize";
 const ORDER_DATA_QUERY = `SELECT o.order_id as id,o.order_total_price as orderTotalPrice,o.order_timestamp as orderTimestamp,o.order_status as orderStatus,o.user_id as customerId,d.delivery_date as deliveryDate,d.delivery_status as deliveryStatus,CONCAT(ua.street_number,' , ',ua.street,' , ',ua.city,' , ',ua.state,' , ',ua.country) as deliveryAddress
  FROM orders o, delivery d ,user_address ua where o.delivery_id=d.delivery_id and d.user_address_id=ua.user_address_id and o.order_timestamp> ? and o.order_timestamp < ? limit ? offset ?`;
 
+const ORDER_DATA_QUERY_COUNT = `SELECT count(*) FROM orders o, delivery d ,user_address ua where o.delivery_id=d.delivery_id and d.user_address_id=ua.user_address_id and o.order_timestamp> ? and o.order_timestamp < ?`;
+
 const UPDATE_ORDER_STATUS = `Update orders  set order_status=? where order_id=?`;
 
 const COUNT_BY_ORDER_ID = `SELECT count(*) FROM orders WHERE order_id = ?`;
@@ -29,6 +31,15 @@ export async function orderDataDao(fromDate, toDate, limit, offset) {
   });
 
   return results;
+}
+
+export async function countOrderDataDao(fromDate, toDate) {
+  const results = await sequelize.query(ORDER_DATA_QUERY_COUNT, {
+    replacements: [fromDate, toDate],
+    type: QueryTypes.SELECT,
+  });
+  const count = results[0]["count(*)"];
+  return count;
 }
 
 export async function updateOrderStatusDao(status, orderId) {

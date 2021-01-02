@@ -4695,3 +4695,138 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 2021-01-02T08:23:07.471Z [sysco_oms] info: false
 2021-01-02T08:23:07.474Z [sysco_oms] info: false
 2021-01-02T08:23:07.477Z [sysco_oms] info: false
+2021-01-02T17:26:47.482Z [sysco_oms] info: false
+2021-01-02T17:26:47.749Z [sysco_oms] info: false
+2021-01-02T17:26:47.757Z [sysco_oms] info: false
+2021-01-02T17:26:47.764Z [sysco_oms] info: false
+2021-01-02T17:29:05.427Z [sysco_oms] info: false
+2021-01-02T17:29:05.652Z [sysco_oms] info: false
+2021-01-02T17:29:05.661Z [sysco_oms] info: false
+2021-01-02T17:29:05.667Z [sysco_oms] info: false
+2021-01-02T17:32:33.866Z [sysco_oms] info: false
+2021-01-02T17:32:34.092Z [sysco_oms] info: false
+2021-01-02T17:32:34.099Z [sysco_oms] info: false
+2021-01-02T17:32:34.106Z [sysco_oms] info: false
+2021-01-02T17:52:35.552Z [sysco_oms] info: false
+2021-01-02T17:52:35.697Z [sysco_oms] info: false
+2021-01-02T17:52:35.700Z [sysco_oms] info: false
+2021-01-02T17:52:35.702Z [sysco_oms] info: false
+2021-01-02T17:53:28.066Z [sysco_oms] info: false
+2021-01-02T17:53:28.203Z [sysco_oms] info: false
+2021-01-02T17:53:28.205Z [sysco_oms] info: false
+2021-01-02T17:53:28.208Z [sysco_oms] info: false
+2021-01-02T17:55:51.246Z [sysco_oms] info: false
+2021-01-02T17:55:51.376Z [sysco_oms] info: false
+2021-01-02T17:55:51.379Z [sysco_oms] info: false
+2021-01-02T17:55:51.381Z [sysco_oms] info: false
+2021-01-02T17:56:52.490Z [sysco_oms] info: false
+2021-01-02T17:56:52.572Z [sysco_oms] info: false
+2021-01-02T17:56:52.574Z [sysco_oms] info: false
+2021-01-02T17:56:52.576Z [sysco_oms] info: false
+2021-01-02T17:57:26.554Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40)
+2021-01-02T17:57:26.555Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40) stack INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-02T17:57:26.561Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:29:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-02T17:57:55.610Z [sysco_oms] info: false
+2021-01-02T17:57:55.694Z [sysco_oms] info: false
+2021-01-02T17:57:55.697Z [sysco_oms] info: false
+2021-01-02T17:57:55.699Z [sysco_oms] info: false
+2021-01-02T17:58:23.314Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40)
+2021-01-02T17:58:23.315Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40) stack INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-02T17:58:23.319Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:29:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-02T17:59:00.929Z [sysco_oms] info: false
+2021-01-02T17:59:01.067Z [sysco_oms] info: false
+2021-01-02T17:59:01.074Z [sysco_oms] info: false
+2021-01-02T17:59:01.079Z [sysco_oms] info: false
+2021-01-02T17:59:35.427Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40)
+2021-01-02T17:59:35.428Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: result is not defined
+    at countOrderDataDao (/home/windulakularatne/sysco-test-project/oms-node/src/dao/orderDao.js:41:17)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at OrderService.getOrders (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:46:24)
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:17:40) stack INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-02T17:59:35.432Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:33:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: result is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:29:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-02T17:59:36.469Z [sysco_oms] info: false
+2021-01-02T17:59:36.568Z [sysco_oms] info: false
+2021-01-02T17:59:36.571Z [sysco_oms] info: false
+2021-01-02T17:59:36.574Z [sysco_oms] info: false
+2021-01-02T18:00:03.242Z [sysco_oms] info: false
+2021-01-02T18:00:03.379Z [sysco_oms] info: false
+2021-01-02T18:00:03.381Z [sysco_oms] info: false
+2021-01-02T18:00:03.384Z [sysco_oms] info: false
+2021-01-02T18:10:36.964Z [sysco_oms] info: false
+2021-01-02T18:10:37.047Z [sysco_oms] info: false
+2021-01-02T18:10:37.050Z [sysco_oms] info: false
+2021-01-02T18:10:37.055Z [sysco_oms] info: false
+2021-01-02T18:14:36.703Z [sysco_oms] info: false
+2021-01-02T18:14:36.841Z [sysco_oms] info: false
+2021-01-02T18:14:36.846Z [sysco_oms] info: false
+2021-01-02T18:14:36.854Z [sysco_oms] info: false
+2021-01-02T18:17:52.229Z [sysco_oms] info: false
+2021-01-02T18:17:52.384Z [sysco_oms] info: false
+2021-01-02T18:17:52.387Z [sysco_oms] info: false
+2021-01-02T18:17:52.390Z [sysco_oms] info: false
+2021-01-02T18:23:07.622Z [sysco_oms] info: false
+2021-01-02T18:23:07.769Z [sysco_oms] info: false
+2021-01-02T18:23:07.774Z [sysco_oms] info: false
+2021-01-02T18:23:07.782Z [sysco_oms] info: false

@@ -14,8 +14,8 @@ class OrderController {
   async getOrderRoute(req, res, next) {
     try {
       if (isValidGetOrderRequest(req.query)) {
-        const result = await orderService.getOrders(req.query);
-        return res.status(200).json({ orders: result });
+        const { result, orderCount } = await orderService.getOrders(req.query);
+        return res.status(200).json({ orders: result, orderCount: orderCount });
       } else {
         logger.error(
           `%s OrderController getOrderRoute param: { %s}`,
@@ -97,8 +97,8 @@ const orderService = new OrderService();
 
 const orderController = new OrderController();
 
-orderRoutes.get("/", orderController.getOrderRoute);
+orderRoutes.get("", orderController.getOrderRoute);
 orderRoutes.patch("/:orderId", orderController.updateOrderRoute);
-orderRoutes.post("/", orderController.createOrder);
+orderRoutes.post("", orderController.createOrder);
 
 export default orderRoutes;

@@ -8,6 +8,7 @@ import {
   orderDataDao,
   orderStatusByIdDao,
   updateOrderStatusDao,
+  countOrderDataDao,
 } from "../dao/orderDao";
 import { bulkInsertOrderItemDao } from "../dao/orderItemDao";
 import {
@@ -42,7 +43,12 @@ class OrderService {
       pageOffset
     );
 
-    return result;
+    const orderCount = await countOrderDataDao(
+      dates["fromDate"],
+      dates["toDate"]
+    );
+
+    return { result, orderCount };
   }
 
   async cancelOrder(orderId, orderStatusRequest) {
