@@ -1,4 +1,3 @@
-import { Router } from "express";
 import logger from "../config/logger";
 import { OrderStatusConst } from "../constants/orderStatus";
 import { responseMsgs } from "../constants/responseMsgsConst";
@@ -10,12 +9,18 @@ import {
 } from "../validation/orderValidation";
 import { ServerError } from "../exception/exceptions";
 
-class OrderController {
+const orderService = new OrderService();
+
+export default class OrderController {
   async getOrderRoute(req, res, next) {
     try {
       if (isValidGetOrderRequest(req.query)) {
         const { result, orderCount } = await orderService.getOrders(req.query);
-        return res.status(200).json({ orders: result, orderCount: orderCount });
+        return res.status(200).json({
+          orders: result,
+          orderCount: orderCount,
+          message: responseMsgs.SUCCESS,
+        });
       } else {
         logger.error(
           `%s OrderController getOrderRoute param: { %s}`,
@@ -89,16 +94,20 @@ class OrderController {
       next(new ServerError(error));
     }
   }
+
+  async getProducts(req, res, next) {
+    try {
+      const result = await orderService.getProducts();
+      return res
+        .status(200)
+        .json({ products: result, message: responseMsgs.SUCCESS });
+    } catch (error) {
+      logger.error(
+        "%s OrderController getOrderRoute %s",
+        responseMsgs.INVALID_INPUTS,
+        error
+      );
+      next(new ServerError(error));
+    }
+  }
 }
-
-const orderRoutes = Router();
-
-const orderService = new OrderService();
-
-const orderController = new OrderController();
-
-orderRoutes.get("", orderController.getOrderRoute);
-orderRoutes.patch("/:orderId", orderController.updateOrderRoute);
-orderRoutes.post("", orderController.createOrder);
-
-export default orderRoutes;

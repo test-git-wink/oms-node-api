@@ -26,3 +26,6 @@ updateOrderStatusDao.mockImplementation((status, id) => {
 
 export const insertOrderDao2 = jest.fn();
 insertOrderDao2.mockResolvedValue(23);
+
+export const countOrderDataDao = jest.fn();
+countOrderDataDao.mockResolvedValue(Promise.resolve(1));

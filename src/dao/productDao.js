@@ -33,3 +33,13 @@ export async function updateProductQuantityByIdDao(
 
   return data[1];
 }
+
+export async function findAllProductsDao() {
+  let data = await Product.findAll({
+    attributes: ["productId", "productName", "prodMeasureUnit"],
+    raw: true,
+  });
+  if (data == null) {
+    return null;
+  } else return data;
+}

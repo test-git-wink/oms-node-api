@@ -8,7 +8,7 @@ jest.mock("../../service/orderService");
 describe("GET  /v1/customer-orders/order check", () => {
   test("OrderController.getOrderRoute should return success response", async () => {
     const response = await request(app)
-      .get("/v1/customer-orders/order")
+      .get("/v1/customer-orders/orders")
       .set("Accept", "application/json")
       .query({
         fromDate: "2020-12-01",
@@ -22,7 +22,7 @@ describe("GET  /v1/customer-orders/order check", () => {
 
   test("OrderController.getOrderRoute should return invalid input response", async () => {
     const response = await request(app)
-      .get("/v1/customer-orders/order")
+      .get("/v1/customer-orders/orders")
       .set("Accept", "application/json")
       .query({
         fromDate: "abs",
@@ -36,7 +36,7 @@ describe("GET  /v1/customer-orders/order check", () => {
 
   test("OrderController.getOrderRoute should return internal server error response", async () => {
     const response = await request(app)
-      .get("/v1/customer-orders/order")
+      .get("/v1/customer-orders/orders")
       .set("Accept", "application/json")
       .query({
         fromDate: "2020-12-01",
@@ -49,14 +49,14 @@ describe("GET  /v1/customer-orders/order check", () => {
   });
 });
 
-describe("PACTH  v1/customer-orders/order/{orderId} check", () => {
+describe("PACTH  v1/customer-orders/orders/{orderId} check", () => {
   test("OrderController.updateOrderRoute should return success response valid request", async () => {
     let orderId = 1;
     let body = {
       orderStatus: "cancel",
     };
     const response = await request(app)
-      .patch(`/v1/customer-orders/order/${orderId}`)
+      .patch(`/v1/customer-orders/orders/${orderId}`)
       .set("Accept", "application/json")
       .send(body);
 
@@ -70,7 +70,7 @@ describe("PACTH  v1/customer-orders/order/{orderId} check", () => {
       orderStatus: "cancel",
     };
     const response = await request(app)
-      .patch(`/v1/customer-orders/order/${orderId}`)
+      .patch(`/v1/customer-orders/orders/${orderId}`)
       .set("Accept", "application/json")
       .send(body);
 
@@ -84,7 +84,7 @@ describe("PACTH  v1/customer-orders/order/{orderId} check", () => {
       orderStatus: "cancel",
     };
     const response = await request(app)
-      .patch(`/v1/customer-orders/order/${orderId}`)
+      .patch(`/v1/customer-orders/orders/${orderId}`)
       .set("Accept", "application/json")
       .send(body);
 
@@ -112,7 +112,7 @@ describe("POST  /v1/customer-orders/order/ check", () => {
       userAddresID: 1,
     };
     const response = await request(app)
-      .post(`/v1/customer-orders/order`)
+      .post(`/v1/customer-orders/orders`)
       .set("Accept", "application/json")
       .send(req1);
 
@@ -139,7 +139,7 @@ describe("POST  /v1/customer-orders/order/ check", () => {
     };
 
     const response = await request(app)
-      .post(`/v1/customer-orders/order`)
+      .post(`/v1/customer-orders/orders`)
       .set("Accept", "application/json")
       .send(req2);
 
@@ -166,7 +166,7 @@ describe("POST  /v1/customer-orders/order/ check", () => {
     };
 
     const response = await request(app)
-      .post(`/v1/customer-orders/order`)
+      .post(`/v1/customer-orders/orders`)
       .set("Accept", "application/json")
       .send(req3);
 

@@ -34,7 +34,7 @@ describe("OrderService.getOrders check", () => {
       limit: "10",
     };
     let data = await orderService.getOrders(req);
-    expect(data).toEqual([]);
+    expect(data).toEqual({ result: [], orderCount: 1 });
   });
 });
 

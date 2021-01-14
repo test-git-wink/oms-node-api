@@ -1,5 +1,5 @@
 import express from "express";
-import orderRoute from "./routes/orderRoutes";
+import IndexRoutes from "./routes/indexRoute";
 import { ServerError, RouteNotFoundError } from "./exception/exceptions";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -12,7 +12,8 @@ app.use(bodyParser.text({ inflate: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use("/v1/customer-orders/order", orderRoute);
+app.use("/v1/customer-orders/orders", IndexRoutes.orderRoutes);
+app.use("/v1/user", IndexRoutes.userRoutes);
 
 app.use((req, res, next) => {
   console.log("invalid route");
@@ -26,7 +27,8 @@ app.use((err, req, res, next) => {
   if (err instanceof RouteNotFoundError)
     return res.status(500).json(err.getRouteNotFoundResponse());
   else {
-    return res.status(500).json(new ServerError(err));
+    const error = new ServerError(err);
+    return res.status(500).json(error.getServerErrorResponse());
   }
 });
 

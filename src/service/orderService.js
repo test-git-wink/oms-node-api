@@ -28,6 +28,7 @@ import {
   isValidOrderRequest,
   validOrderCancelRequest,
 } from "../validation/orderValidation";
+import { findAllProductsDao } from "../dao/productDao";
 
 class OrderService {
   async getOrders(request) {
@@ -139,6 +140,12 @@ class OrderService {
       await transaction.rollback();
       throw error;
     }
+  }
+
+  async getProducts() {
+    const result = await findAllProductsDao();
+
+    return result;
   }
 }
 

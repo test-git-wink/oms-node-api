@@ -1,6 +1,8 @@
 import { isBefore, isEqual } from "date-fns";
 import moment from "moment";
 import { validateGetOrders } from "../dto/getOrderRequest";
+import { countByUserIdDao } from "../dao/userDao";
+import { countByUserAddressIdDao } from "../dao/userAddressDao";
 
 const INVALID_DATE = "Invalid date";
 const DATE_FORMAT = "YYYY-MM-DD";
@@ -31,4 +33,8 @@ export function isValidGetOrderRequest(request) {
     validateGetOrders(request) &&
     isVallidDateRange(request.fromDate, request.toDate)
   );
+}
+
+export async function isValidGetUserAddressRequest(userId) {
+  return isValidNumber(userId) && (await countByUserIdDao(userId));
 }

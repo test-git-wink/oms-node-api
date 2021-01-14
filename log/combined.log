@@ -4830,3 +4830,1382 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 2021-01-02T18:23:07.769Z [sysco_oms] info: false
 2021-01-02T18:23:07.774Z [sysco_oms] info: false
 2021-01-02T18:23:07.782Z [sysco_oms] info: false
+2021-01-04T03:53:31.180Z [sysco_oms] info: false
+2021-01-04T03:53:31.302Z [sysco_oms] info: false
+2021-01-04T03:53:31.305Z [sysco_oms] info: false
+2021-01-04T03:53:31.307Z [sysco_oms] info: false
+2021-01-04T03:53:38.076Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-04T03:53:39.223Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-04T03:53:40.148Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-04T03:55:00.788Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T08:23:17.922Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T08:34:31.362Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T08:41:19.475Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T08:48:45.916Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { { fromDate: '2021-01-30', toDate: '2021-01-04', page: '0', limit: '5' }}
+2021-01-04T08:49:00.927Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { { fromDate: '2021-01-30', toDate: '2021-01-04', page: '0', limit: '5' }}
+2021-01-04T10:08:21.951Z [sysco_oms] info: false
+2021-01-04T10:08:22.122Z [sysco_oms] info: false
+2021-01-04T10:08:22.125Z [sysco_oms] info: false
+2021-01-04T10:08:22.128Z [sysco_oms] info: false
+2021-01-04T11:10:48.085Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:10:48.094Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:16:49.541Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:16:49.545Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:17:03.461Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:17:03.464Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:17:18.499Z [sysco_oms] info: false
+2021-01-04T11:17:18.587Z [sysco_oms] info: false
+2021-01-04T11:17:18.590Z [sysco_oms] info: false
+2021-01-04T11:17:18.592Z [sysco_oms] info: false
+2021-01-04T11:17:25.458Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T11:17:25.468Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T12:00:53.689Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T12:01:38.371Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T12:01:39.046Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-04T12:01:43.914Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-04T12:01:45.129Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-04T12:04:41.961Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T12:04:41.970Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { {}}
+2021-01-04T12:25:09.132Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { {}}
+2021-01-04T12:26:21.259Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-04T12:26:21.270Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { {}}
+2021-01-04T12:27:40.667Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-05T05:18:11.254Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { { fromDate: '2021-01-30', toDate: '2021-01-05', page: '2', limit: '5' }}
+2021-01-05T06:27:37.080Z [sysco_oms] info: false
+2021-01-05T06:27:37.251Z [sysco_oms] info: false
+2021-01-05T06:27:37.255Z [sysco_oms] info: false
+2021-01-05T06:27:37.312Z [sysco_oms] info: false
+2021-01-05T09:16:02.051Z [sysco_oms] info: false
+2021-01-05T09:16:02.195Z [sysco_oms] info: false
+2021-01-05T09:16:02.201Z [sysco_oms] info: false
+2021-01-05T09:16:02.204Z [sysco_oms] info: false
+2021-01-05T09:31:35.608Z [sysco_oms] info: false
+2021-01-05T09:31:35.708Z [sysco_oms] info: false
+2021-01-05T09:31:35.711Z [sysco_oms] info: false
+2021-01-05T09:31:35.717Z [sysco_oms] info: false
+2021-01-05T09:35:15.057Z [sysco_oms] info: false
+2021-01-05T09:35:15.149Z [sysco_oms] info: false
+2021-01-05T09:35:15.152Z [sysco_oms] info: false
+2021-01-05T09:35:15.172Z [sysco_oms] info: false
+2021-01-05T09:38:09.988Z [sysco_oms] info: false
+2021-01-05T09:38:10.089Z [sysco_oms] info: false
+2021-01-05T09:38:10.092Z [sysco_oms] info: false
+2021-01-05T09:38:10.147Z [sysco_oms] info: false
+2021-01-05T09:38:26.237Z [sysco_oms] info: false
+2021-01-05T09:38:26.338Z [sysco_oms] info: false
+2021-01-05T09:38:26.342Z [sysco_oms] info: false
+2021-01-05T09:38:26.408Z [sysco_oms] info: false
+2021-01-05T09:38:47.431Z [sysco_oms] info: false
+2021-01-05T09:38:47.522Z [sysco_oms] info: false
+2021-01-05T09:38:47.525Z [sysco_oms] info: false
+2021-01-05T09:38:47.545Z [sysco_oms] info: false
+2021-01-05T09:38:50.320Z [sysco_oms] info: false
+2021-01-05T09:38:50.409Z [sysco_oms] info: false
+2021-01-05T09:38:50.412Z [sysco_oms] info: false
+2021-01-05T09:38:50.414Z [sysco_oms] info: false
+2021-01-05T09:40:59.002Z [sysco_oms] info: false
+2021-01-05T09:40:59.095Z [sysco_oms] info: false
+2021-01-05T09:40:59.098Z [sysco_oms] info: false
+2021-01-05T09:40:59.100Z [sysco_oms] info: false
+2021-01-05T09:41:33.569Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-05T09:41:52.882Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:96:67)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T09:41:52.882Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:96:67)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T09:41:52.884Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:29:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-05T09:42:13.190Z [sysco_oms] info: false
+2021-01-05T09:42:13.282Z [sysco_oms] info: false
+2021-01-05T09:42:13.284Z [sysco_oms] info: false
+2021-01-05T09:42:13.287Z [sysco_oms] info: false
+2021-01-05T09:42:17.961Z [sysco_oms] info: false
+2021-01-05T09:42:18.061Z [sysco_oms] info: false
+2021-01-05T09:42:18.064Z [sysco_oms] info: false
+2021-01-05T09:42:18.069Z [sysco_oms] info: false
+2021-01-05T09:42:37.691Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:96:67)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T09:42:37.692Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:96:67)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T09:42:37.696Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at getProducts (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderRoutes.js:103:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: orderCount is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:29:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-05T09:43:36.674Z [sysco_oms] info: false
+2021-01-05T09:43:36.765Z [sysco_oms] info: false
+2021-01-05T09:43:36.768Z [sysco_oms] info: false
+2021-01-05T09:43:36.771Z [sysco_oms] info: false
+2021-01-05T09:45:07.858Z [sysco_oms] info: false
+2021-01-05T09:45:07.946Z [sysco_oms] info: false
+2021-01-05T09:45:07.949Z [sysco_oms] info: false
+2021-01-05T09:45:08.002Z [sysco_oms] info: false
+2021-01-05T09:45:10.323Z [sysco_oms] info: false
+2021-01-05T09:45:10.412Z [sysco_oms] info: false
+2021-01-05T09:45:10.415Z [sysco_oms] info: false
+2021-01-05T09:45:10.466Z [sysco_oms] info: false
+2021-01-05T09:58:44.826Z [sysco_oms] info: false
+2021-01-05T09:58:44.928Z [sysco_oms] info: false
+2021-01-05T09:58:44.931Z [sysco_oms] info: false
+2021-01-05T09:58:44.983Z [sysco_oms] info: false
+2021-01-05T09:59:05.419Z [sysco_oms] info: false
+2021-01-05T09:59:05.515Z [sysco_oms] info: false
+2021-01-05T09:59:05.520Z [sysco_oms] info: false
+2021-01-05T09:59:05.573Z [sysco_oms] info: false
+2021-01-05T09:59:09.153Z [sysco_oms] info: false
+2021-01-05T09:59:09.263Z [sysco_oms] info: false
+2021-01-05T09:59:09.266Z [sysco_oms] info: false
+2021-01-05T09:59:09.323Z [sysco_oms] info: false
+2021-01-05T10:05:32.952Z [sysco_oms] info: false
+2021-01-05T10:05:33.039Z [sysco_oms] info: false
+2021-01-05T10:05:33.042Z [sysco_oms] info: false
+2021-01-05T10:05:33.048Z [sysco_oms] info: false
+2021-01-05T10:05:48.983Z [sysco_oms] info: false
+2021-01-05T10:05:49.067Z [sysco_oms] info: false
+2021-01-05T10:05:49.070Z [sysco_oms] info: false
+2021-01-05T10:05:49.075Z [sysco_oms] info: false
+2021-01-05T10:08:11.830Z [sysco_oms] info: false
+2021-01-05T10:08:11.924Z [sysco_oms] info: false
+2021-01-05T10:08:11.929Z [sysco_oms] info: false
+2021-01-05T10:08:11.931Z [sysco_oms] info: false
+2021-01-05T10:08:22.024Z [sysco_oms] info: false
+2021-01-05T10:08:22.109Z [sysco_oms] info: false
+2021-01-05T10:08:22.111Z [sysco_oms] info: false
+2021-01-05T10:08:22.116Z [sysco_oms] info: false
+2021-01-05T10:14:21.958Z [sysco_oms] info: false
+2021-01-05T10:14:22.045Z [sysco_oms] info: false
+2021-01-05T10:14:22.048Z [sysco_oms] info: false
+2021-01-05T10:14:22.050Z [sysco_oms] info: false
+2021-01-05T10:17:53.205Z [sysco_oms] info: false
+2021-01-05T10:17:53.299Z [sysco_oms] info: false
+2021-01-05T10:17:53.302Z [sysco_oms] info: false
+2021-01-05T10:17:53.305Z [sysco_oms] info: false
+2021-01-05T10:19:09.478Z [sysco_oms] info: false
+2021-01-05T10:19:09.562Z [sysco_oms] info: false
+2021-01-05T10:19:09.565Z [sysco_oms] info: false
+2021-01-05T10:19:09.568Z [sysco_oms] info: false
+2021-01-05T10:20:01.405Z [sysco_oms] info: false
+2021-01-05T10:20:01.491Z [sysco_oms] info: false
+2021-01-05T10:20:01.494Z [sysco_oms] info: false
+2021-01-05T10:20:01.496Z [sysco_oms] info: false
+2021-01-05T10:20:11.889Z [sysco_oms] info: false
+2021-01-05T10:20:11.975Z [sysco_oms] info: false
+2021-01-05T10:20:11.977Z [sysco_oms] info: false
+2021-01-05T10:20:11.980Z [sysco_oms] info: false
+2021-01-05T10:20:20.654Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-05T10:20:32.867Z [sysco_oms] info: false
+2021-01-05T10:20:32.966Z [sysco_oms] info: false
+2021-01-05T10:20:32.969Z [sysco_oms] info: false
+2021-01-05T10:20:32.972Z [sysco_oms] info: false
+2021-01-05T10:28:33.099Z [sysco_oms] info: false
+2021-01-05T10:28:33.184Z [sysco_oms] info: false
+2021-01-05T10:28:33.187Z [sysco_oms] info: false
+2021-01-05T10:28:33.190Z [sysco_oms] info: false
+2021-01-05T10:28:46.418Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:19:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-05T10:30:21.972Z [sysco_oms] info: false
+2021-01-05T10:30:22.068Z [sysco_oms] info: false
+2021-01-05T10:30:22.071Z [sysco_oms] info: false
+2021-01-05T10:30:22.077Z [sysco_oms] info: false
+2021-01-05T10:30:34.492Z [sysco_oms] info: false
+2021-01-05T10:30:34.591Z [sysco_oms] info: false
+2021-01-05T10:30:34.593Z [sysco_oms] info: false
+2021-01-05T10:30:34.596Z [sysco_oms] info: false
+2021-01-05T10:30:39.092Z [sysco_oms] info: false
+2021-01-05T10:30:39.182Z [sysco_oms] info: false
+2021-01-05T10:30:39.185Z [sysco_oms] info: false
+2021-01-05T10:30:39.187Z [sysco_oms] info: false
+2021-01-05T10:33:52.083Z [sysco_oms] info: false
+2021-01-05T10:33:52.180Z [sysco_oms] info: false
+2021-01-05T10:33:52.183Z [sysco_oms] info: false
+2021-01-05T10:33:52.187Z [sysco_oms] info: false
+2021-01-05T11:03:59.915Z [sysco_oms] info: false
+2021-01-05T11:04:00.036Z [sysco_oms] info: false
+2021-01-05T11:04:00.046Z [sysco_oms] info: false
+2021-01-05T11:04:00.050Z [sysco_oms] info: false
+2021-01-05T11:09:28.288Z [sysco_oms] info: false
+2021-01-05T11:09:28.374Z [sysco_oms] info: false
+2021-01-05T11:09:28.377Z [sysco_oms] info: false
+2021-01-05T11:09:28.379Z [sysco_oms] info: false
+2021-01-05T11:09:32.165Z [sysco_oms] info: false
+2021-01-05T11:09:32.252Z [sysco_oms] info: false
+2021-01-05T11:09:32.257Z [sysco_oms] info: false
+2021-01-05T11:09:32.260Z [sysco_oms] info: false
+2021-01-05T11:10:37.998Z [sysco_oms] info: false
+2021-01-05T11:10:38.088Z [sysco_oms] info: false
+2021-01-05T11:10:38.090Z [sysco_oms] info: false
+2021-01-05T11:10:38.093Z [sysco_oms] info: false
+2021-01-05T11:13:18.577Z [sysco_oms] info: false
+2021-01-05T11:13:18.661Z [sysco_oms] info: false
+2021-01-05T11:13:18.664Z [sysco_oms] info: false
+2021-01-05T11:13:18.669Z [sysco_oms] info: false
+2021-01-05T11:16:38.751Z [sysco_oms] info: false
+2021-01-05T11:16:38.842Z [sysco_oms] info: false
+2021-01-05T11:16:38.844Z [sysco_oms] info: false
+2021-01-05T11:16:38.847Z [sysco_oms] info: false
+2021-01-05T11:17:07.557Z [sysco_oms] info: false
+2021-01-05T11:17:07.643Z [sysco_oms] info: false
+2021-01-05T11:17:07.645Z [sysco_oms] info: false
+2021-01-05T11:17:07.650Z [sysco_oms] info: false
+2021-01-05T11:19:00.744Z [sysco_oms] info: false
+2021-01-05T11:19:00.828Z [sysco_oms] info: false
+2021-01-05T11:19:00.831Z [sysco_oms] info: false
+2021-01-05T11:19:00.833Z [sysco_oms] info: false
+2021-01-05T11:19:04.136Z [sysco_oms] info: false
+2021-01-05T11:19:04.219Z [sysco_oms] info: false
+2021-01-05T11:19:04.221Z [sysco_oms] info: false
+2021-01-05T11:19:04.226Z [sysco_oms] info: false
+2021-01-05T11:26:35.605Z [sysco_oms] info: false
+2021-01-05T11:26:35.697Z [sysco_oms] info: false
+2021-01-05T11:26:35.703Z [sysco_oms] info: false
+2021-01-05T11:26:35.706Z [sysco_oms] info: false
+2021-01-05T11:28:41.237Z [sysco_oms] info: false
+2021-01-05T11:28:41.326Z [sysco_oms] info: false
+2021-01-05T11:28:41.330Z [sysco_oms] info: false
+2021-01-05T11:28:41.332Z [sysco_oms] info: false
+2021-01-05T11:29:41.985Z [sysco_oms] info: false
+2021-01-05T11:29:42.076Z [sysco_oms] info: false
+2021-01-05T11:29:42.079Z [sysco_oms] info: false
+2021-01-05T11:29:42.082Z [sysco_oms] info: false
+2021-01-05T11:29:45.036Z [sysco_oms] info: false
+2021-01-05T11:29:45.122Z [sysco_oms] info: false
+2021-01-05T11:29:45.127Z [sysco_oms] info: false
+2021-01-05T11:29:45.130Z [sysco_oms] info: false
+2021-01-05T11:30:08.667Z [sysco_oms] info: false
+2021-01-05T11:30:08.757Z [sysco_oms] info: false
+2021-01-05T11:30:08.759Z [sysco_oms] info: false
+2021-01-05T11:30:08.762Z [sysco_oms] info: false
+2021-01-05T11:30:12.104Z [sysco_oms] error: INVALID_INPUTS UserController getUserAddress param: { 1}
+2021-01-05T11:31:01.219Z [sysco_oms] info: false
+2021-01-05T11:31:01.304Z [sysco_oms] info: false
+2021-01-05T11:31:01.307Z [sysco_oms] info: false
+2021-01-05T11:31:01.309Z [sysco_oms] info: false
+2021-01-05T11:31:03.789Z [sysco_oms] info: false
+2021-01-05T11:31:03.872Z [sysco_oms] info: false
+2021-01-05T11:31:03.878Z [sysco_oms] info: false
+2021-01-05T11:31:03.881Z [sysco_oms] info: false
+2021-01-05T11:31:27.089Z [sysco_oms] info: false
+2021-01-05T11:31:27.215Z [sysco_oms] info: false
+2021-01-05T11:31:27.224Z [sysco_oms] info: false
+2021-01-05T11:31:27.233Z [sysco_oms] info: false
+2021-01-05T11:34:07.157Z [sysco_oms] info: false
+2021-01-05T11:34:07.234Z [sysco_oms] info: false
+2021-01-05T11:34:07.236Z [sysco_oms] info: false
+2021-01-05T11:34:07.239Z [sysco_oms] info: false
+2021-01-05T11:34:19.932Z [sysco_oms] info: false
+2021-01-05T11:34:20.018Z [sysco_oms] info: false
+2021-01-05T11:34:20.024Z [sysco_oms] info: false
+2021-01-05T11:34:20.027Z [sysco_oms] info: false
+2021-01-05T11:34:25.112Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute TypeError: Cannot read property 'userService' of undefined
+    at getUserAddress (/home/windulakularatne/sysco-test-project/oms-node/src/routes/userController.js:16:33)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T11:34:25.113Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message TypeError: Cannot read property 'userService' of undefined
+    at getUserAddress (/home/windulakularatne/sysco-test-project/oms-node/src/routes/userController.js:16:33)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: TypeError: Cannot read property 'userService' of undefined
+    at getUserAddress (/home/windulakularatne/sysco-test-project/oms-node/src/routes/userController.js:36:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-05T11:34:25.115Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: TypeError: Cannot read property 'userService' of undefined
+    at getUserAddress (/home/windulakularatne/sysco-test-project/oms-node/src/routes/userController.js:36:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: TypeError: Cannot read property 'userService' of undefined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-05T12:16:29.224Z [sysco_oms] info: false
+2021-01-05T12:16:29.306Z [sysco_oms] info: false
+2021-01-05T12:16:29.311Z [sysco_oms] info: false
+2021-01-05T12:16:29.313Z [sysco_oms] info: false
+2021-01-06T05:39:47.346Z [sysco_oms] error: INVALID_INPUTS UserController getUserAddress param: { undefined }
+2021-01-06T10:19:14.755Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T10:19:16.801Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T10:23:44.154Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T10:35:12.000Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T10:37:07.060Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T11:11:27.801Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T11:46:34.257Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T12:49:12.892Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-06T12:57:35.317Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T12:57:39.404Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T12:57:52.199Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T12:58:16.728Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T18:06:14.324Z [sysco_oms] info: false
+2021-01-06T18:06:14.472Z [sysco_oms] info: false
+2021-01-06T18:06:14.475Z [sysco_oms] info: false
+2021-01-06T18:06:14.478Z [sysco_oms] info: false
+2021-01-06T18:06:57.626Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T18:07:27.893Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:28.838Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:29.705Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:30.500Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:31.173Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:31.826Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:32.416Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:07:32.964Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-06T18:08:32.087Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-06T18:10:41.430Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T03:40:26.859Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'ads',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T03:40:26.893Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:40:26.894Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:40:26.904Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:42:17.112Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'kk',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-07T03:42:17.122Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:42:17.122Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:42:17.124Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:33
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:49:52.782Z [sysco_oms] info: false
+2021-01-07T03:49:52.927Z [sysco_oms] info: false
+2021-01-07T03:49:52.931Z [sysco_oms] info: false
+2021-01-07T03:49:52.935Z [sysco_oms] info: false
+2021-01-07T03:49:59.150Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'kk',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-07T03:49:59.240Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:49:59.241Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:49:59.245Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:50:10.235Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'ads',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T03:50:10.254Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:50:10.256Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:50:10.257Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:55:52.885Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'ads',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T03:55:52.904Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:55:52.905Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:55:52.906Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:57:15.841Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 'ads',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '1'
+}}
+2021-01-07T03:57:15.865Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) }
+2021-01-07T03:57:15.866Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message ReferenceError: transaction is not defined
+    at OrderService.placeOrder (/home/windulakularatne/sysco-test-project/oms-node/src/service/orderService.js:140:7)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:76:25) stack INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-07T03:57:15.867Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: ReferenceError: transaction is not defined
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-07T03:57:45.891Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '1'
+}}
+2021-01-07T04:59:35.197Z [sysco_oms] info: false
+2021-01-07T04:59:35.281Z [sysco_oms] info: false
+2021-01-07T04:59:35.283Z [sysco_oms] info: false
+2021-01-07T04:59:35.286Z [sysco_oms] info: false
+2021-01-07T04:59:39.596Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { { toDate: '2020-12-31', page: '2', limit: '5' }}
+2021-01-07T05:06:04.674Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T05:18:41.199Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T05:20:00.046Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T05:26:03.457Z [sysco_oms] error: INVALID_INPUTS UserController getUserAddress param: { as }
+2021-01-07T05:26:07.378Z [sysco_oms] error: INVALID_INPUTS UserController getUserAddress param: { as }
+2021-01-07T05:27:18.172Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T05:45:22.182Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '3'
+}}
+2021-01-07T05:51:55.157Z [sysco_oms] info: false
+2021-01-07T05:51:55.335Z [sysco_oms] info: false
+2021-01-07T05:51:55.344Z [sysco_oms] info: false
+2021-01-07T05:51:55.348Z [sysco_oms] info: false
+2021-01-07T05:52:15.456Z [sysco_oms] info: false
+2021-01-07T05:52:15.558Z [sysco_oms] info: false
+2021-01-07T05:52:15.563Z [sysco_oms] info: false
+2021-01-07T05:52:15.566Z [sysco_oms] info: false
+2021-01-07T05:52:20.285Z [sysco_oms] info: false
+2021-01-07T05:52:20.384Z [sysco_oms] info: false
+2021-01-07T05:52:20.387Z [sysco_oms] info: false
+2021-01-07T05:52:20.390Z [sysco_oms] info: false
+2021-01-07T07:43:28.876Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T08:07:52.517Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T08:20:13.082Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-07T08:22:08.994Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T08:38:12.832Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-07T16:48:37.514Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-08T04:38:40.259Z [sysco_oms] info: false
+2021-01-08T04:38:40.405Z [sysco_oms] info: false
+2021-01-08T04:38:40.407Z [sysco_oms] info: false
+2021-01-08T04:38:40.410Z [sysco_oms] info: false
+2021-01-08T04:40:05.951Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-08T04:40:29.006Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: '1',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-08T04:40:30.149Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: '1',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-08T04:40:30.816Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: '1',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-08T04:40:31.481Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: '1',
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: 1
+}}
+2021-01-08T04:41:34.596Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-08T04:42:19.359Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-08T05:24:57.736Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-08T05:25:12.195Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-08T05:51:19.949Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-10T12:41:59.604Z [sysco_oms] info: false
+2021-01-10T12:42:05.014Z [sysco_oms] info: false
+2021-01-11T03:39:26.709Z [sysco_oms] info: false
+2021-01-11T03:39:26.792Z [sysco_oms] info: false
+2021-01-11T03:39:26.794Z [sysco_oms] info: false
+2021-01-11T03:39:26.797Z [sysco_oms] info: false
+2021-01-11T04:41:51.087Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '2'
+}}
+2021-01-11T07:17:00.156Z [sysco_oms] info: false
+2021-01-11T07:17:00.239Z [sysco_oms] info: false
+2021-01-11T07:17:00.242Z [sysco_oms] info: false
+2021-01-11T07:17:00.244Z [sysco_oms] info: false
+2021-01-12T08:20:00.556Z [sysco_oms] info: false
+2021-01-12T08:20:00.757Z [sysco_oms] info: false
+2021-01-12T08:20:00.760Z [sysco_oms] info: false
+2021-01-12T08:20:00.763Z [sysco_oms] info: false
+2021-01-12T08:27:33.367Z [sysco_oms] info: false
+2021-01-12T08:27:33.504Z [sysco_oms] info: false
+2021-01-12T08:27:33.507Z [sysco_oms] info: false
+2021-01-12T08:27:33.509Z [sysco_oms] info: false
+2021-01-12T08:33:47.693Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  userAddresID: '1'
+}}
+2021-01-13T04:11:08.436Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-13T04:11:08.590Z [sysco_oms] info: false
+2021-01-13T04:11:08.945Z [sysco_oms] info: false
+2021-01-13T04:11:09.023Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.029Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.045Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.063Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.068Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.075Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.084Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.089Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:09.093Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.223Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-13T04:11:34.270Z [sysco_oms] info: false
+2021-01-13T04:11:34.571Z [sysco_oms] info: false
+2021-01-13T04:11:34.648Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.668Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.678Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.691Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.699Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.704Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.714Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.719Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T04:11:34.724Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:46.996Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-13T06:30:47.062Z [sysco_oms] info: false
+2021-01-13T06:30:47.344Z [sysco_oms] info: false
+2021-01-13T06:30:47.420Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.440Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.450Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.464Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.472Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.480Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.485Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.489Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:30:47.494Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.472Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-13T06:32:36.425Z [sysco_oms] info: false
+2021-01-13T06:32:36.631Z [sysco_oms] info: false
+2021-01-13T06:32:36.716Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.737Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.747Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.761Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.769Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.773Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.778Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.786Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:32:36.791Z [sysco_oms] error: name ROUTE_NOT_FOUND message ROUTE_NOT_FOUND stack ROUTE_NOT_FOUND: ROUTE_NOT_FOUND
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:20:17
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/home/windulakularatne/sysco-test-project/oms-node/node_modules/body-parser/lib/types/urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:317:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+2021-01-13T06:58:49.083Z [sysco_oms] info: 1 OrderController cancelOrder orderUpdateCount: { %s }
+2021-01-13T06:58:49.146Z [sysco_oms] info: false
+2021-01-13T06:58:49.458Z [sysco_oms] info: false
+2021-01-13T06:58:49.545Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute param: { { fromDate: 'abs', toDate: '2020-12-31', page: '10', limit: '10' }}
+2021-01-13T06:58:49.554Z [sysco_oms] error: INVALID_INPUTS OrderController getOrderRoute []
+2021-01-13T06:58:49.558Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message [] stack INTERNAL_SERVER_ERROR: 
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:38:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-13T06:58:49.563Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: 
+    at getOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:38:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-13T06:58:49.579Z [sysco_oms] error: INVALID_INPUTS OrderController updateOrderRoute() param: { orderId: 10 , orderStatus : {"orderStatus":"cancel"}}
+2021-01-13T06:58:49.586Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 0 }
+2021-01-13T06:58:49.587Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message 0 stack INTERNAL_SERVER_ERROR: 
+    at updateOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:64:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-13T06:58:49.588Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: 
+    at updateOrderRoute (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:64:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) {
+  message: 0
+} stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: 0
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+2021-01-13T06:58:49.591Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-13T06:58:49.593Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-13T06:58:49.596Z [sysco_oms] info: OrderController createOrder() param: {  orderRequest : {
+  userId: 1,
+  orderItemList: [Array],
+  orderStatus: 'placed',
+  shipmentDate: '2020-12-31',
+  userAddresID: 1
+}}
+2021-01-13T06:58:49.596Z [sysco_oms] error: INTERNAL_SERVER_ERROR error OrderController updateOrderRoute param: { 57 }
+2021-01-13T06:58:49.596Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message 57 stack INTERNAL_SERVER_ERROR: 57
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)
+2021-01-13T06:58:49.597Z [sysco_oms] error: name INTERNAL_SERVER_ERROR message INTERNAL_SERVER_ERROR: 57
+    at createOrder (/home/windulakularatne/sysco-test-project/oms-node/src/routes/orderController.js:94:12)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5) stack INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR: 57
+    at /home/windulakularatne/sysco-test-project/oms-node/src/index.js:30:19
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/layer.js:67:12)
+    at trim_prefix (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:315:13)
+    at /home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/windulakularatne/sysco-test-project/oms-node/node_modules/express/lib/router/index.js:335:12)
